@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.d-flex {
+    display: flex;
+    gap: 2rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover {
+    color: blue;
+}
+
+footer li a {
+    color: white;
+}
+
+footer {
+    font-family: 'inter', Helvetica, sans-serif;
+}
+
+.df-around {
+    justify-content: space-around;
+}
+
+.df-between {
+    justify-content: space-between;
+}
+
+.df-right {
+    justify-content: right;
+}
+
+.df-center {
+    justify-content: center;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.dg-1-1 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.dg-1-1-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.dg-1-1-1-1 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.dg-2-1 {
+    grid-template-columns: 2fr 1fr;
+}
+
+.dg-1-2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.b-1 {
+    border-radius: 1rem;
+}
+
+.m-0 {
+    margin: 0 10rem 0 10rem;
+}
+
+.ml-0 {
+    margin-left: 0;
+}
+
+.ml-2 {
+    margin-left: 2rem;
+}
+
+.ml-3 {
+    margin-left: 3rem;
+}
+
+.ml-5 {
+    margin-left: 5rem;
+}
+
+.ml-6 {
+    margin-left: 6rem;
+}
+
+.ml-7 {
+    margin-left: 8rem;
+}
+
+.ml-9 {
+    margin-left: 9rem;
+}
+
+.mr-3 {
+    margin-right: 3rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.mt-10 {
+    margin-top: 10rem;
+}
+
+.p-a {
+    position: absolute;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.p-5 {
+    padding: 5rem;
+}
+
+.p-11 {
+    padding: 1.5rem 3rem;
+}
+
+.pl-2 {
+    padding-left: 2rem;
+}
+
+.pl-10 {
+    padding-left: 10rem;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.f-10 {
+    font-size: 2.5rem;
+}
+
+.f-5 {
+    font-size: 1.5rem;
+}
+
+.w-12 {
+    width: 18rem;
+}
+
+.btn {
+    padding: 10px 20px 10px 20px;
+}
+
+.btn-action {
+    background-color: orange;
+    border-color: orange;
+    font-weight: 700;
+    border-radius: 7px;
+}
+
+.br {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.w {
+    width: 333px;
+}
