@@ -32,6 +32,22 @@ footer ul li{
     margin-bottom: 10px;
 }
 
+.f-24 {
+    font-size: 24px;
+}
+
+.f-28 {
+    font-size: 28px;
+}
+
+.f-40 {
+    font-size: 40px;
+}
+
+.w-18 {
+    width: 18rem;
+}
+
 .btn {
     padding: 10px 20px 10px 20px;
 }
@@ -57,14 +73,24 @@ footer ul li{
     padding: 1.5rem 3rem;
 }
 
-.w-18 {
-    width: 18rem;
+#about-highlight-section {
+    background-color: gray;
+    border-radius: 1.5rem;
+    color: white;
 }
 
-.f-10 {
-    font-size: 2.5rem;
+.milestone-position {
+    float: right;
+    position: relative;
+    right: -3.5rem;
 }
 
-.f-5 {
-    font-size: 1.5rem;
+.milestone-marker {
+    position: relative;
+    right: 0;
+    top: 0;
+    background-color: orange;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
 }
