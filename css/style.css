@@ -1,0 +1,70 @@
+:root{
+    --primary-font: 'Nunito sans', Helvetica, sans-serif;
+    --hero-font: 'Anton', Helvetica, sans-serif;
+    --footer-font: 'Inter', Helvetica, sans-serif;  
+    --primary-button-bgcolor: orange;
+}
+
+#hero-section {
+    background: url('./../img/hero/hero-banner.png') no-repeat right top;
+    font-family: var(--hero-font);
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+footer {
+    font-family: var(--footer-font);
+    color: white;
+}
+
+footer li a {
+    color: white;
+}
+
+
+footer ul{
+    font-size: 14px;
+}
+
+footer ul li{
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 10px 20px 10px 20px;
+}
+
+.btn-action {
+    background-color: var(--primary-button-bgcolor);
+    border: 0px;
+    font-weight: 700;
+    border-radius: 7px;
+}
+
+.highlight-bg {
+    background-color: var(--primary-button-bgcolor);
+}
+
+.highlight-text{
+    color: var(--primary-button-bgcolor);
+}
+
+#featurette-lists{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1.5rem 3rem;
+}
+
+.w-18 {
+    width: 18rem;
+}
+
+.f-10 {
+    font-size: 2.5rem;
+}
+
+.f-5 {
+    font-size: 1.5rem;
+}
