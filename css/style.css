@@ -2,12 +2,13 @@
     --primary-font: 'Nunito sans', Helvetica, sans-serif;
     --hero-font: 'Anton', Helvetica, sans-serif;
     --footer-font: 'Inter', Helvetica, sans-serif;  
-    --primary-button-bgcolor: orange;
+    --primary-button-bgcolor: #FC8019;
 }
 
 #hero-section {
     background: url('./../img/hero/hero-banner.png') no-repeat right top;
     font-family: var(--hero-font);
+    min-height: 100%;
 }
 
 body {
@@ -49,14 +50,15 @@ footer ul li{
 }
 
 .btn {
-    padding: 10px 20px 10px 20px;
+    padding: 15px 30px 15px 30px;
 }
 
 .btn-action {
     background-color: var(--primary-button-bgcolor);
     border: 0px;
+    font-size: medium;
     font-weight: 700;
-    border-radius: 7px;
+    border-radius: 24px;
 }
 
 .highlight-bg {
@@ -69,8 +71,8 @@ footer ul li{
 
 #featurette-lists{
     border: 1px solid black;
-    border-radius: 5px;
-    padding: 1.5rem 3rem;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
 }
 
 #about-highlight-section {
