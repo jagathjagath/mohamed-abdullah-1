@@ -5,6 +5,16 @@
     --primary-button-bgcolor: #FC8019;
 }
 
+nav{
+    position: fixed;
+    width: 100%;
+    min-height: 5rem;
+    background-color: white;
+    box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .16);
+    -moz-box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .16);
+}
+
 #hero-section {
     background: url('./../img/hero/hero-banner.png') no-repeat right top;
     font-family: var(--hero-font);
@@ -33,6 +43,10 @@ footer ul li{
     margin-bottom: 10px;
 }
 
+.br-r-1 {
+    border-right: 1px solid #000;
+}
+
 .f-24 {
     font-size: 24px;
 }
@@ -43,6 +57,9 @@ footer ul li{
 
 .f-40 {
     font-size: 40px;
+}
+.fw-normal {
+    font-weight: normal;
 }
 
 .w-18 {
@@ -95,4 +112,45 @@ footer ul li{
     border-radius: 50%;
     width: 15px;
     height: 15px;
+}
+
+.plan-left{
+    padding-left: 2rem;
+}
+
+#highlight-video{
+    width: 700px;
+    height: 360px;
+}
+
+.mobile-show{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    button{
+        font-size: small !important;
+    }
+    nav ul{
+        display: initial !important;
+    }
+    nav ul li{
+        margin: 10px;
+    }
+    #highlight-video{
+        margin-top: 2rem;
+        width: 100%;
+    }    
+    .plan-left{
+        padding-left: 0;
+    }
+    .mobile-center{
+        text-align: center;
+    }
+    .mobile-hide{
+        display: none !important;
+    }
+    .mobile-show{
+        display: initial !important;
+    }
 }
