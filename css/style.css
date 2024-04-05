@@ -150,6 +150,12 @@ footer ul li {
     #gallery-section{
         display: none;
     }
+    #road-map .d-grid{
+        display: grid;
+    }
+    #road-map .dg-1-1{
+        grid-template-columns: 1fr 1fr;
+    }
     .mobile-block{
         display: block;
     }
@@ -167,10 +173,12 @@ footer ul li {
 
     nav ul {
         display: initial !important;
+        width: 100%;
     }
 
     nav ul li {
         margin: 10px;
+        width: 100%;
     }
 
     #highlight-video {
