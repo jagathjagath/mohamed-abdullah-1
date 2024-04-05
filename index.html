@@ -36,12 +36,12 @@
         <nav>
             <div class="full-width">
                 <div class="d-flex df-right" id="show-menu-option">
-                    <span class="float-right mobile-show" onclick="showMenu();">
-                        <i class="ri-menu-line"></i>
+                    <span class="float-right mobile-show p-1" onclick="showMenu();">
+                        <i class="ri-menu-line" style="font-size: 30px;"></i>
                     </span>
                 </div>
-                <div class="d-flex df-right" id="hide-menu-option">
-                    <span class="float-right mobile-show" onclick="hideMenu();">[x]</span>
+                <div class="d-flex df-right mobile-hide p-1" id="hide-menu-option">
+                    <span class="float-right" onclick="hideMenu();">[x]</span>
                 </div>
             </div>
             <ul class="d-flex df-around p-2 mobile-hide" id="header-nav">
@@ -111,25 +111,24 @@
                 </div>
             </div>
         </section>
-        <section id="Program-section">
+        <section id="program-section">
             <div class="container">
                 <div class="d-grid df-center f-24">
                     <h1>What will you get from this <span class="highlight-text">Program</span>?</h1>
                 </div>
                 <div class="d-grid dg-1-1-1">
                     <div class="text-center mt-1">
-                        <img src="img/program/program-1.png" alt="">
+                        <img src="img/program/program-1.png" class="full-width" alt="">
                     </div>
                     <div class="text-center mt-1">
-                        <img src="img/program/program-2.png" alt="">
+                        <img src="img/program/program-2.png" class="full-width" alt="">
                     </div>
                     <div class="text-center mt-1">
-                        <img src="img/program/program-3.png" alt="">
+                        <img src="img/program/program-3.png" class="full-width" alt="">
                     </div>
                 </div>
                 <div class="d-flex df-center mt-5">
                     <button class="btn btn-action">Explore All Programs</button>
-                    <i class="fas fa-trash "></i>
                 </div>
             </div>
         </section>
@@ -141,7 +140,7 @@
                     </div>
                     <div class="full-width">
                         <div class="d-grid dg-2-1">
-                            <div class="d-flex df-between">
+                            <div class="d-flex mobile-block df-between">
                                 <h3>WEIGHT GAIN<br>[ 3 session / week ]</h3>
                                 <button class="btn btn-action m-1">Online training</button>
                             </div>
@@ -150,9 +149,9 @@
                             </div>
                         </div>
                         <div class="d-grid dg-2-1 mt-2">
-                            <div class="d-flex df-between">
+                            <div class="d-flex mobile-block df-between">
                                 <div>
-                                    <h1>Progress Review:<small>Weekly Once</small></h1>
+                                    <h1>Progress Review:<small class="mobile-block">Weekly Once</small></h1>
                                 </div>
                                 <div>
                                     <div>
@@ -173,22 +172,18 @@
                             </div>
                         </div>
                         <div class="d-grid dg-2-1 mt-1">
-                            <div class="mt-2">
-                                <div id="featurette-lists">
-                                    <div class="d-flex df-between p-1">
-                                        <ul>
-                                            <li>Warm-up</li>
-                                            <li>Cardio</li>
-                                            <li>Floor Exercise</li>
-                                            <li>Diet/Nutrition Advice</li>
-                                        </ul>
-                                        <ul>
-                                            <li>Weight Training</li>
-                                            <li>Stretching</li>
-                                            <li>Counseling</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            <div class="d-flex df-around" id="featurette-lists">
+                                <ul>
+                                    <li>Warm-up</li>
+                                    <li>Cardio</li>
+                                    <li>Floor Exercise</li>
+                                    <li>Diet/Nutrition Advice</li>
+                                </ul>
+                                <ul>
+                                    <li>Weight Training</li>
+                                    <li>Stretching</li>
+                                    <li>Counseling</li>
+                                </ul>
                             </div>
                             <div class="plan-left">
                                 <div class="d-grid dg-1-1">
@@ -225,7 +220,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-grid dg-2-1 mt-1">
+                        <!-- <div class="d-grid dg-2-1 mt-1">
                             <div>
                                 <p class="highlight-text mt-1">*Important queries through messages and phone calls</p>
                             </div>
@@ -234,7 +229,8 @@
                                     <button class="btn btn-action full-width mr-2 mx-1">JOIN MEMBER</button>
                                 </div>
                             </div>
-                        </div>
+                        </div>  -->
+                    
                     </div>
                 </div>
             </div>
@@ -356,16 +352,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex df-center mt-3">
-                    <div>
-                        <button class="btn btn-action">
-                            <i class="ri-whatsapp-fill"></i>
-                            Contact Mohammed Abdullah
-                        </button>
-                    </div>
-                    <div>
-                        <button class="btn btn-action">Enroll for a free trail Session</button>
-                    </div>
+                <div class="d-flex df-center mobile-block mt-3">
+                    <button class="btn btn-action">
+                        <i class="ri-whatsapp-fill"></i>
+                        Contact Mohammed Abdullah
+                    </button>
+                    <button class="btn btn-action">
+                        Enroll for a free trail Session
+                    </button>
                 </div>
             </div>
         </section>
@@ -437,8 +431,8 @@
         </section>
     </main>
     <footer>
-        <div class="mt-5 bg-black p-5 text-white">
-            <div class="d-grid dg-1-1-1-1 ml-3">
+        <div class="mt-5">
+            <div class="d-grid dg-1-1-1-1 ml-2">
                 <div class="mt-2">
                     <div class="highlight-text">
                         <h4>MR.MD ABDULLAH</h4>

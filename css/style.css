@@ -8,6 +8,8 @@
 nav {
     position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
     min-height: 5rem;
     background-color: white;
     box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.16);
@@ -27,6 +29,7 @@ body {
 
 footer {
     font-family: var(--footer-font);
+    background-color: black;
     color: white;
 }
 
@@ -99,9 +102,13 @@ footer ul li {
 }
 
 #featurette-lists {
-    border: 1px solid black;
+    border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 1.5rem 2rem;
+    padding: 1rem 1rem;
+}
+
+#featurette-lists ul{
+    padding: 20px;
 }
 
 #about-highlight-section {
@@ -140,6 +147,20 @@ footer ul li {
 }
 
 @media only screen and (max-width: 600px) {
+    #gallery-section{
+        display: none;
+    }
+    .mobile-block{
+        display: block;
+    }
+    button, .btn{
+        display: block !important;
+        margin: 15px 0px;
+        width: 100%;
+    }
+    footer{
+        padding-bottom: 50px;
+    }
     button {
         font-size: small !important;
     }
@@ -155,6 +176,7 @@ footer ul li {
     #highlight-video {
         margin-top: 2rem;
         width: 100%;
+        height: auto;
     }
 
     .plan-left {

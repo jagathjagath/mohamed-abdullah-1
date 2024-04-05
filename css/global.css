@@ -356,9 +356,6 @@ a:hover {
 
 
 @media only screen and (max-width: 600px) {
-    #gallery-section, header{
-        display: none;
-    }
     .container{
         padding: 25px 50px;
     }
