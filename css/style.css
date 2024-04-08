@@ -58,13 +58,6 @@ footer ul li {
     font-size: 24px;
 }
 
-.f-28 {
-    font-size: 28px;
-}
-
-.f-36 {
-    font-size: 36px;
-}
 
 .f-40 {
     font-size: 40px;
@@ -114,7 +107,7 @@ footer ul li {
     padding: 1rem 1rem;
 }
 
-#featurette-lists ul{
+#featurette-lists ul {
     padding: 20px;
 }
 
@@ -154,26 +147,45 @@ footer ul li {
 }
 
 @media only screen and (max-width: 600px) {
-    #gallery-section{
+    #gallery-section {
         display: none;
     }
-    #road-map .d-grid{
+
+    #road-map .d-grid {
         display: grid;
     }
-    #road-map .dg-1-1{
+
+    #road-map .dg-1-1 {
         grid-template-columns: 1fr 1fr;
     }
-    .mobile-block{
+
+    .mobile-block {
         display: block;
     }
-    button, .btn{
+
+    button,
+    .btn {
         display: block !important;
         margin: 15px 0px;
         width: 100%;
     }
-    footer{
+
+    footer {
         padding-bottom: 50px;
     }
+
+    footer ul {
+        font-size: 3.5vw;
+    }
+
+    footer div {
+        font-size: 3.5vw;
+    }
+
+    footer div p {
+        font-size: 3.5vw;
+    }
+
     button {
         font-size: small !important;
     }
@@ -186,6 +198,10 @@ footer ul li {
     nav ul li {
         margin: 10px;
         width: 100%;
+    }
+
+    .f-24 {
+        font-size: 2vw;
     }
 
     #highlight-video {
