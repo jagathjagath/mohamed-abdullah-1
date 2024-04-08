@@ -57,13 +57,6 @@ footer ul li {
     font-size: 24px;
 }
 
-.f-28 {
-    font-size: 28px;
-}
-
-.f-36 {
-    font-size: 36px;
-}
 
 .f-40 {
     font-size: 40px;
@@ -200,6 +193,10 @@ footer ul li {
         width: 100%;
     }
 
+    .f-24 {
+        font-size: 2vw;
+    }
+
     #highlight-video {
         margin-top: 2rem;
         width: 100%;
@@ -208,6 +205,11 @@ footer ul li {
 
     .plan-left {
         padding-left: 0;
+    }
+
+    .milestone-marker {
+        width: 2.5vw;
+        height: 2.5vw;
     }
 
     .mobile-center {
