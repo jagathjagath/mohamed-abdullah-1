@@ -3,6 +3,7 @@
     --hero-font: 'Anton', Helvetica, sans-serif;
     --footer-font: 'Inter', Helvetica, sans-serif;
     --primary-button-bgcolor: #FC8019;
+    --rating-star-bgcolor: gold;
 }
 
 nav {
@@ -80,6 +81,9 @@ footer ul li {
 .w-18 {
     width: 18rem;
 }
+.float-right{
+    float: right;
+}
 
 .btn {
     padding: 15px 30px 15px 30px;
@@ -99,6 +103,9 @@ footer ul li {
 
 .highlight-text {
     color: var(--primary-button-bgcolor);
+}
+.rating{
+    color: var(--rating-star-bgcolor);
 }
 
 #featurette-lists {
