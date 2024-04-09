@@ -401,12 +401,52 @@ a:hover {
     padding-bottom: 10rem;
 }
 
-.py-3 {
-    padding: 0rem 3rem;
+.px-05 {
+    padding: 0rem 0.5rem;
+}
+
+.px-1 {
+    padding: 0rem 1rem;
+}
+
+.px-2 {
+    padding: 0rem 2rem;
 }
 
 .px-3 {
+    padding: 0rem 3rem;
+}
+
+.px-4 {
+    padding: 0rem 4rem;
+}
+
+.px-5 {
+    padding: 0rem 5rem;
+}
+
+.py-05 {
+    padding: 0.5rem 0rem;
+}
+
+.py-1 {
+    padding: 1rem 0rem;
+}
+
+.py-2 {
+    padding: 2rem 0rem;
+}
+
+.py-3 {
     padding: 3rem 0rem;
+}
+
+.py-4 {
+    padding: 4rem 0rem;
+}
+
+.py-5 {
+    padding: 5rem 0rem;
 }
 
 .full-width {
