@@ -13,7 +13,7 @@ nav {
     top: 0;
     left: 0;
     min-height: 5rem;
-    background-color: white;
+    background-color: #F0EFF4;
     box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.16);
     -webkit-box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .16);
     -moz-box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .16);
@@ -31,16 +31,16 @@ body {
 
 footer {
     font-family: var(--footer-font);
-    background-color: black;
-    color: white;
+    background-color: #172121;
+    color: #F0EFF4;
 }
 
 footer li a {
-    color: white;
+    color: #F0EFF4;
 }
 
 footer li a:hover {
-    color: white;
+    color: #F0EFF4;
 }
 
 footer ul {
@@ -137,7 +137,7 @@ footer ul li {
 #about-highlight-section {
     background-color: gray;
     border-radius: 1.5rem;
-    color: white;
+    color: #F0EFF4;
 }
 
 .milestone-position {
