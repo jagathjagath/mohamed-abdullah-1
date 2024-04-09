@@ -441,6 +441,10 @@ a:hover {
     padding: 5rem 0rem;
 }
 
+.cursor {
+    cursor: pointer;
+}
+
 .full-width {
     width: 100%;
 }
