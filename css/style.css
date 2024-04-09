@@ -4,6 +4,7 @@
     --footer-font: 'Inter', Helvetica, sans-serif;
     --primary-button-bgcolor: #FC8019;
     --rating-star-bgcolor: gold;
+    --testimonial-bgcolor: #d3d3d3;
 }
 
 nav {
@@ -58,9 +59,10 @@ footer ul li {
     font-size: 24px;
 }
 
-.f-30{
+.f-30 {
     font-size: 30px;
 }
+
 .f-40 {
     font-size: 40px;
 }
@@ -76,7 +78,12 @@ footer ul li {
 .w-18 {
     width: 18rem;
 }
-.float-right{
+
+.light-op {
+    opacity: 0.8;
+}
+
+.float-right {
     float: right;
 }
 
@@ -99,8 +106,14 @@ footer ul li {
 .highlight-text {
     color: var(--primary-button-bgcolor);
 }
-.rating{
+
+.rating {
     color: var(--rating-star-bgcolor);
+}
+
+.testimonial-bg {
+    background-color: var(--testimonial-bgcolor);
+    border-radius: 7px;
 }
 
 #featurette-lists {
