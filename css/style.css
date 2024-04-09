@@ -17,6 +17,7 @@ nav {
     box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.16);
     -webkit-box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .16);
     -moz-box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .16);
+    z-index: 1;
 }
 
 a:hover {
@@ -53,6 +54,47 @@ footer ul {
 
 footer ul li {
     margin-bottom: 10px;
+}
+
+.slide1 {
+    height: 400px;
+    width: 100%;
+    transform: translate();
+    background-image: url(http://127.0.0.1:5500/img/program/program-1.png);
+    background-size: 100%;
+    animation: slider 9s infinite linear;
+}
+
+.slide2 {
+    height: 400px;
+    width: 100%;
+    transform: translate();
+    background-image: url(http://127.0.0.1:5500/img/program/program-2.png);
+    background-size: 100%;
+    animation: slider 9s infinite linear;
+}
+
+.slide3 {
+    height: 400px;
+    width: 100%;
+    transform: translate();
+    background-image: url(http://127.0.0.1:5500/img/program/program-3.png);
+    background-size: 100%;
+    animation: slider 9s infinite linear;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url(http://127.0.0.1:5500/img/program/program-1.png);
+    }
+
+    35% {
+        background-image: url(http://127.0.0.1:5500/img/program/program-2.png);
+    }
+
+    75% {
+        background-image: url(http://127.0.0.1:5500/img/program/program-3.png);
+    }
 }
 
 .br-r-1 {
