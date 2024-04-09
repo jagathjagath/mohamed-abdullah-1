@@ -13,10 +13,14 @@ nav {
     top: 0;
     left: 0;
     min-height: 5rem;
-    background-color: #F0EFF4;
+    background-color: white;
     box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.16);
     -webkit-box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .16);
     -moz-box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .16);
+}
+
+a:hover {
+    color: blue;
 }
 
 #hero-section {
@@ -53,6 +57,10 @@ footer ul li {
 
 .br-r-1 {
     border-right: 1px solid #000;
+}
+
+.f-18 {
+    font-size: 18px;
 }
 
 .f-24 {

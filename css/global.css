@@ -25,10 +25,6 @@ a {
     color: #172121;
 }
 
-a:hover {
-    color: blue;
-}
-
 .container {
     padding: 50px 100px;
 }
@@ -40,6 +36,10 @@ a:hover {
 
 .gap-0 {
     gap: 0rem;
+}
+
+.gap-1 {
+    gap: 1rem;
 }
 
 .gap-2 {
