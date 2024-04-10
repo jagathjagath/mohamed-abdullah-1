@@ -13,7 +13,7 @@ nav {
     top: 0;
     left: 0;
     min-height: 5rem;
-    background-color: #F0EFF4;
+    background-color: #FFFFFF;
     box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.16);
     -webkit-box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .16);
     -moz-box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .16);
@@ -203,6 +203,14 @@ footer ul li {
     border-bottom: none;
     border-top: 16px solid #F0EFF4;
     transform: rotate(180deg);
+}
+
+.border {
+    border-radius: 100%;
+    width: 35px;
+    height: 25px;
+    background-color: #000;
+    color: #F0EFF4;
 }
 
 @media only screen and (max-width: 600px) {
