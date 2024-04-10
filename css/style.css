@@ -56,46 +56,6 @@ footer ul li {
     margin-bottom: 10px;
 }
 
-.slide1 {
-    height: 400px;
-    width: 100%;
-    transform: translate();
-    background-image: url(http://127.0.0.1:5500/img/program/program-1.png);
-    background-size: 100%;
-    animation: slider 9s infinite linear;
-}
-
-.slide2 {
-    height: 400px;
-    width: 100%;
-    transform: translate();
-    background-image: url(http://127.0.0.1:5500/img/program/program-2.png);
-    background-size: 100%;
-    animation: slider 9s infinite linear;
-}
-
-.slide3 {
-    height: 400px;
-    width: 100%;
-    transform: translate();
-    background-image: url(http://127.0.0.1:5500/img/program/program-3.png);
-    background-size: 100%;
-    animation: slider 9s infinite linear;
-}
-
-@keyframes slider {
-    0% {
-        background-image: url(http://127.0.0.1:5500/img/program/program-1.png);
-    }
-
-    35% {
-        background-image: url(http://127.0.0.1:5500/img/program/program-2.png);
-    }
-
-    75% {
-        background-image: url(http://127.0.0.1:5500/img/program/program-3.png);
-    }
-}
 
 .br-r-1 {
     border-right: 1px solid #000;
@@ -217,6 +177,32 @@ footer ul li {
 
 .mobile-show {
     display: none;
+}
+
+.arrow1,
+.arrow2,
+.arrow3,
+.arrow4,
+.arrow5 {
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 16px solid white;
+    position: relative;
+    margin: 0px auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.arrow1.up,
+.arrow2.up,
+.arrow3.up,
+.arrow4.up,
+.arrow5.up {
+    border-bottom: none;
+    border-top: 16px solid white;
+    transform: rotate(180deg);
 }
 
 @media only screen and (max-width: 600px) {

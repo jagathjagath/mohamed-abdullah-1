@@ -21,13 +21,22 @@
     <script>
         $(document).ready(function () {
             $(".faq-answer").hide();
-            $(".hide-answer").click(function () {
-                $(this).parent().siblings(".faq-answer").hide(500);
-            });
-            $(".show-answer").click(function () {
-                $(this).parent().siblings(".faq-answer").show(500);
+
+            $(".arrow1, .arrow2, .arrow3, .arrow4, .arrow5").click(function () {
+                var faqAnswer = $(this).parent().siblings(".faq-answer");
+                $(".faq-answer").not(faqAnswer).hide(500);
+                $(".arrow1, .arrow2, .arrow3, .arrow4, .arrow5").not(this).removeClass("up");
+
+                if (faqAnswer.is(":visible")) {
+                    faqAnswer.hide(500);
+                    $(this).removeClass("up");
+                } else {
+                    $(this).addClass("up");
+                    faqAnswer.show(500);
+                }
             });
         });
+
     </script>
     <title>Mohammed Abdullah</title>
 </head>
@@ -369,9 +378,8 @@
                 <div class="question-area">
                     <div class="d-flex p-2 bg-black text-white mt-5 rounded">
                         <div class="full-width">
-                            <div class="float-right">
-                                <button class="hide-answer cursor">Hide</button>
-                                <button class="show-answer cursor">Show</button>
+                            <div class="float-right arrow-container">
+                                <div class="arrow1"></div>
                             </div>
                             <h4>For Offline Training, where does the fitness coach conduct sessions?</h4>
                             <p class="faq-answer pt-1">
@@ -384,9 +392,8 @@
                     </div>
                     <div class="d-flex p-2 bg-black text-white mt-1 m-0 rounded">
                         <div class="full-width">
-                            <div class="float-right">
-                                <button class="hide-answer cursor">Hide</button>
-                                <button class="show-answer cursor">Show</button>
+                            <div class="float-right arrow-container">
+                                <div class="arrow2"></div>
                             </div>
                             <h4>Do I need to take supplements or injections for my body transformation?</h4>
                             <p class="faq-answer pt-1">
@@ -400,9 +407,8 @@
                     </div>
                     <div class="d-flex p-2 bg-black text-white mt-1 m-0 rounded">
                         <div class="full-width">
-                            <div class="float-right">
-                                <button class="hide-answer cursor">Hide</button>
-                                <button class="show-answer cursor">Show</button>
+                            <div class="float-right arrow-container">
+                                <div class="arrow3"></div>
                             </div>
                             <h4>
                                 What if I'm unavailable during the scheduled time with the coach due to work or personal
@@ -423,9 +429,8 @@
                     </div>
                     <div class="d-flex p-2 bg-black text-white mt-1 m-0 rounded">
                         <div class="full-width">
-                            <div class="float-right">
-                                <button class="hide-answer cursor">Hide</button>
-                                <button class="show-answer cursor">Show</button>
+                            <div class="float-right arrow-container">
+                                <div class="arrow4"></div>
                             </div>
                             <h4>Will I feel pressured during training or dieting?</h4>
                             <p class="faq-answer pt-1">
@@ -438,9 +443,8 @@
                     </div>
                     <div class="d-flex p-2 bg-black text-white mt-1 m-0 rounded">
                         <div class="full-width">
-                            <div class="float-right">
-                                <button class="hide-answer cursor">Hide</button>
-                                <button class="show-answer cursor">Show</button>
+                            <div class="float-right arrow-container">
+                                <div class="arrow5"></div>
                             </div>
                             <h4>
                                 Is online training effective for learning and completing workouts? How do you correct
@@ -520,19 +524,6 @@
             </div>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        function showMenu() {
-            $("#header-nav").removeClass("mobile-hide");
-            $("#hide-menu-option").removeClass("mobile-hide");
-            $("#show-menu-option").addClass("mobile-hide");
-        }
-        function hideMenu() {
-            $("#header-nav").addClass("mobile-hide");
-            $("#hide-menu-option").addClass("mobile-hide");
-            $("#show-menu-option").removeClass("mobile-hide");
-        }
-    </script>
 </body>
 
 </html>
