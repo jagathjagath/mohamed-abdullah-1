@@ -13,7 +13,7 @@ nav {
     top: 0;
     left: 0;
     min-height: 5rem;
-    background-color: white;
+    background-color: #F0EFF4;
     box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.16);
     -webkit-box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .16);
     -moz-box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .16);
@@ -160,7 +160,7 @@ footer ul li {
     position: relative;
     right: 0;
     top: 0;
-    background-color: orange;
+    background-color: #FC8019;
     border-radius: 50%;
     width: 15px;
     height: 15px;
@@ -188,7 +188,7 @@ footer ul li {
     height: 0;
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
-    border-top: 16px solid white;
+    border-top: 16px solid #F0EFF4;
     position: relative;
     margin: 0px auto;
     transition: transform 0.3s ease;
@@ -201,7 +201,7 @@ footer ul li {
 .arrow4.up,
 .arrow5.up {
     border-bottom: none;
-    border-top: 16px solid white;
+    border-top: 16px solid #F0EFF4;
     transform: rotate(180deg);
 }
 
