@@ -18,6 +18,184 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Animation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $(".heading").animate({
+                    left: '-250px',
+                    height: '35px',
+                    width: '300px',
+                });
+                $("span").css("font-size", "25px");
+            }, 2400);
+        });
+    </script>
+</head>
+
+<body>
+    <div style="position: relative;"></div>
+</body>
+
+</html>
+
+<style>
+    .program-no {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background-color: black;
+        border-radius: 50%;
+        color: white;
+        text-align: center;
+        transform: scale(1, 1);
+        animation: hidetext 2500ms forwards;
+    }
+
+    .card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        width: 90%;
+        margin: 30px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .box {
+        height: 50px;
+        width: 50px;
+        background-color: black;
+        padding: 10px;
+    }
+
+    .box-shadow-r {
+        box-shadow: 10px 10px 5px 0 rgb(199, 190, 190);
+    }
+
+    #hidetext1 {
+        animation-name: zoomin-hide;
+        animation-duration: 3s;
+    }
+
+    #hidetext2 {
+        animation-name: zoomin-hide;
+        animation-duration: 3.5s;
+    }
+
+    #hidetext3 {
+        animation-name: zoomin-hide;
+        animation-duration: 4s;
+    }
+
+    #hidetext4 {
+        animation-name: zoomin-hide;
+        animation-duration: 4.5s;
+    }
+
+
+    .program-no-1 {
+        animation-name: zoomout;
+        animation-duration: 500ms;
+    }
+
+    .program-no-2 {
+        animation-name: zoomout;
+        animation-duration: 800ms;
+    }
+
+    .program-no-3 {
+        animation-name: zoomout;
+        animation-duration: 1100ms;
+    }
+
+    .program-no-4 {
+        animation-name: zoomout;
+        animation-duration: 1400ms;
+    }
+
+    .main-program-1 {
+        animation: fadein;
+        animation-duration: 500ms;
+    }
+
+    .main-program-2 {
+        animation: fadein;
+        animation-duration: 1000ms;
+    }
+
+    .main-program-3 {
+        animation: fadein;
+        animation-duration: 1500ms;
+    }
+
+    .main-program-4 {
+        animation: fadein;
+        animation-duration: 2000ms;
+    }
+
+    @keyframes zoomout {
+        0% {
+            transform: scale(1, 1);
+        }
+
+        25% {
+            transform: scale(1.5, 1.5);
+        }
+
+        50% {
+            transform: scale(1.75, 1.75);
+        }
+
+        100% {
+            transform: scale(1, 1);
+        }
+    }
+
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes zoomin-hide {
+        0% {
+            transform: scale(1, 1);
+        }
+
+        25% {
+            transform: scale(1.5, 1.5);
+        }
+
+        50% {
+            transform: scale(1, 1);
+        }
+
+        100% {
+            transform: scale(1, 1);
+            display: none;
+        }
+    }
+</style>
 
 <body>
     <header>
@@ -47,34 +225,186 @@
     </header>
     <main>
         <section>
-            <div class="mt-5 ml-2 pt-10 d-flex gap-1">
-                <span class="border text-center align-center">
-                    <strong>1</strong>
-                </span>
-                <h1>Contest program</h1>
+            <div class="pt-10 d-flex df-center heading">
+                <div>
+                    <div>
+                        <a href="#contest-program-content">
+                            <h1>
+                                <span class="program-no program-no-1 mr-1" id="hidetext1">1</span>
+                                <span class="main-program-1 f-40">Contest program</span>
+                            </h1>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#regular-program-content">
+                            <h1>
+                                <span class="program-no program-no-2 mr-1" id="hidetext2">2</span>
+                                <span class="main-program-2 f-40">Regular program</span>
+                            </h1>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#healing-program-content">
+                            <h1>
+                                <span class="program-no program-no-3 mr-1" id="hidetext3">3</span>
+                                <span class="main-program-3 f-40">Healing program</span>
+                            </h1>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#diet-plan-content">
+                            <h1>
+                                <span class="program-no program-no-4 mr-1" id="hidetext4">4</span>
+                                <span class="main-program-4 f-40">Diet plan</span>
+                            </h1>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="mt-5  ml-2 d-flex gap-1">
-                <span class="border text-center align-center">
-                    <strong>2</strong>
-                </span>
-                <h1>Regular program</h1>
+        </section>
+        <section id="contest-program-content" style="margin-left: 20rem; margin-top: 5rem;">
+            <h1>Contest Program</h1>
+            <div class="card d-grid dg-2-1 gap-2">
+                <div>
+                    <h3>
+                        Pre Contest preparation
+                    </h3>
+                    <p class="mt-1">
+                        This is the broader phase that typically starts weeks or months before the actual
+                        competition.
+                        The focus is on building muscle mass, improving symmetry, and reducing body fat to achieve a
+                        well-defined and aesthetic physique. Training
+                        intensity may increase, and nutrition is carefully monitored to support muscle growth while
+                        gradually
+                        decreasing body fat.
+                    </p>
+                </div>
+                <img src="img/gallery/gallery-4.png" width="150px" class="ml-5" alt=""
+                    style="box-shadow: 10px 10px 5px 0 rgb(199, 190, 190);">
             </div>
-            <div class="mt-5 ml-2 d-flex gap-1">
-                <span class="border text-center align-center">
-                    <strong>3</strong>
-                </span>
-                <h1>Healing program</h1>
+            <div class="card d-grid dg-1-2">
+                <img src="img/gallery/gallery-4.png" width="150px" class="ml-4" alt="">
+                <div>
+                    <h3>
+                        Contest Preparation
+                    </h3>
+                    <p>
+                        The contest preparation phase occurs closer to the actual competition, often in the final
+                        weeks
+                        or months. The primary goal shifts to achieving maximum muscle definition and reducing body
+                        fat
+                        to showcase the sculpted physique on stage. Nutrition becomes more strict, with attention to
+                        macronutrient balance and fluid manipulation to enhance muscle visibility and vascularity.
+                        Training may involve specific techniques to "peak" the muscles, emphasizing details such as
+                        muscle striations and separation.
+                    </p>
+                </div>
             </div>
-            <div class="mt-5 pb-10 ml-2 d-flex gap-1">
-                <span class="border text-center align-center">
-                    <strong>4</strong>
-                </span>
-                <h1>Diet plan</h1>
+            <div class="card d-grid dg-2-1">
+                <div>
+                    <h3>
+                        Posing Routine
+                    </h3>
+                    <p>
+                        A posing routine in bodybuilding refers to the choreographed display of a competitor's
+                        physique
+                        on stage during a competition.
+                    </p>
+                </div>
+                <img src="img/gallery/gallery-4.png" width="120px" class="ml-5" alt="">
+            </div>
+            <div class="card d-grid dg-1-2">
+                <img src="img/gallery/gallery-4.png" width="110px" class="ml-3" alt="">
+                <div>
+                    <h3>
+                        Post Contest Therapy - PCT
+                    </h3>
+                    <p>
+                        The role of a trainer in Post Contest Therapy (PCT) involves providing support and guidance
+                        to
+                        individuals transitioning from the intense pre-competition
+                        phase to a more balanced lifestyle.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="regular-program-content" style="padding-top: 8rem; margin-left: 20rem;">
+            <h1>Regular Program</h1>
+            <div class="card d-grid dg-2-1">
+                <div>
+                    <h3>Weight gain</h3>
+                    <p>
+                        The trainer creates a personalized workout and nutrition plan to help the client achieve
+                        healthy weight gain.
+                    </p>
+                </div>
+                <div class="box-shadow-r">
+                    <img src="img/gallery/gallery-4.png" width="100px" class="ml-5" alt="">
+
+                </div>
+            </div>
+            <div class="card d-grid dg-1-2">
+                <img src="img/gallery/gallery-4.png" width="120px" class="ml-5" alt="">
+                <div>
+                    <h3>Fat loss</h3>
+                    <p>
+                        The trainer creates a specialized plan focusing on targeted fat reduction while maintaining
+                        or increasing muscle mass through a combination of strategic workouts and nutrition.
+                    </p>
+                </div>
+            </div>
+            <div class="card d-grid dg-2-1">
+                <div>
+                    <h3>Weight loss</h3>
+                    <p>
+                        The trainer designs a comprehensive program aiming to reduce overall body weight through a
+                        combination of calorie control and exercise.
+                    </p>
+                </div>
+                <img src="img/gallery/gallery-4.png" width="120px" class="ml-5" alt="">
+            </div>
+            <div class="card d-grid dg-1-2">
+                <img src="img/gallery/gallery-4.png" width="120px" class="ml-5" alt="">
+                <div>
+                    <h3>Strength Training</h3>
+                    <p>
+                        The trainer develops a strength-focused training program to help the individual enhance
+                        their overall physical strength and endurance.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <section id="healing-program-content" style="padding-top: 8rem; margin-left: 20rem;">
+            <h1>Healing Program</h1>
+            <div class="card d-grid dg-2-1">
+                <div>
+                    <h3>Injury to healing</h3>
+                    <p>
+                        "Injury to healing" refers to the process of transitioning from a state of physical harm or
+                        damage (injury) to a state of recovery and restoration (healing).
+                    </p>
+                </div>
+                <img src="img/gallery/gallery-4.png" width="120px" class="ml-5" alt="">
+            </div>
+        </section>
+        <section id="diet-plan-content" style="padding-top: 8rem; margin-left: 20rem;">
+            <h1>Diet plan</h1>
+            <div class="card d-grid dg-1-2">
+                <img src="img/gallery/gallery-4.png" width="120px" class="ml-3" alt="">
+                <div>
+                    <h3>Diet Planning + Supplement stack (optional)</h3>
+                    <p>
+                        A tailored diet will be designed in alignment with the program and individual goals. The
+                        inclusion of supplements is optional and will be provided based on the client's specific
+                        requirements.
+                    </p>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="container">
+        <div class="container mt-5">
             <div class="d-grid dg-1-1-1-1 pb-3">
                 <div class="mt-5">
                     <div class="highlight-text">
@@ -136,6 +466,14 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(document).scroll(function () {
+                // alert();
+            })
+        });
+    </script>
 </body>
 
 </html>
