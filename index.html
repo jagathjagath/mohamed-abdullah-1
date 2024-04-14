@@ -15,6 +15,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -246,10 +248,10 @@
             <div class="container">
                 <div class="d-grid dg-1-2">
                     <div>
-                        <div class="mt-1">
+                        <div class="mt-1" data-aos="fade-down" data-aos-duration="1000">
                             <h1>Watch Highlight of Mohammed Abdullah personal Training session</h1>
                         </div>
-                        <div class="mt-3">
+                        <div class="mt-3" data-aos="fade-up" data-aos-duration="2000">
                             <p>Experience Mohammed Abdullah's dynamic personal training session, featuring
                                 high-intensity workouts, expert guidance, and motivational coaching. Transform your
                                 fitness journey with tailored routines and measurable results. With expert guidance,
@@ -257,7 +259,7 @@
                                 performance and surpassing his goals.
                             </p>
                         </div>
-                        <div class="mt-2">
+                        <div class="mt-2" data-aos="fade-up" data-aos-duration="3000">
                             <button class="btn btn-action">
                                 <i class="ri-whatsapp-fill"></i>
                                 Contact Mohammed Abdullah
@@ -295,7 +297,7 @@
                     <h1>See what other <span class="highlight-text">client</span> have to say</h1>
                 </div>
                 <div class="d-grid dg-1-1-1 mt-5">
-                    <div>
+                    <div data-aos="zoom-in-up" data-aos-duration="1000">
                         <div class="p-2">
                             <img src="img/review/review-1.png" width="100%" alt="">
                             <div>
@@ -316,7 +318,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div data-aos="zoom-in-up" data-aos-duration="2000">
                         <div class="p-2">
                             <img src="img/review/review-2.png" width="100%" alt="">
                             <div>
@@ -336,7 +338,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div data-aos="zoom-in-up" data-aos-duration="3000">
                         <div class="p-2">
                             <img src="img/review/review-3.png" width="100%" alt="">
                             <div>
@@ -358,11 +360,13 @@
                     </div>
                 </div>
                 <div class="d-flex df-center mobile-block mt-3">
-                    <button class="btn btn-action">
+                    <button class="btn btn-action"
+                    data-aos="fade-down" data-aos-duration="1000">
                         <i class="ri-whatsapp-fill"></i>
                         Contact Mohammed Abdullah
                     </button>
-                    <button class="btn btn-action">
+                    <button class="btn btn-action"
+                    data-aos="fade-down" data-aos-duration="2000">
                         Enroll for a free trail Session
                     </button>
                 </div>
@@ -376,7 +380,8 @@
                     </h1>
                 </div>
                 <div class="question-area">
-                    <div class="d-flex p-2 bg-black text-white mt-5 rounded">
+                    <div class="d-flex p-2 bg-black text-white mt-5 rounded"
+                    data-aos="fade-down" data-aos-duration="3000">
                         <div class="full-width">
                             <div class="float-right arrow-container">
                                 <div class="arrow"></div>
@@ -390,7 +395,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex p-2 bg-black text-white mt-1 m-0 rounded">
+                    <div class="d-flex p-2 bg-black text-white mt-1 m-0 rounded"
+                    data-aos="fade-down" data-aos-duration="3000">
                         <div class="full-width">
                             <div class="float-right arrow-container">
                                 <div class="arrow"></div>
@@ -405,7 +411,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex p-2 bg-black text-white mt-1 m-0 rounded">
+                    <div class="d-flex p-2 bg-black text-white mt-1 m-0 rounded" data-aos="fade-down" data-aos-duration="3000">
                         <div class="full-width">
                             <div class="float-right arrow-container">
                                 <div class="arrow"></div>
@@ -427,7 +433,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex p-2 bg-black text-white mt-1 m-0 rounded">
+                    <div class="d-flex p-2 bg-black text-white mt-1 m-0 rounded" data-aos="fade-down" data-aos-duration="3000">
                         <div class="full-width">
                             <div class="float-right arrow-container">
                                 <div class="arrow"></div>
@@ -441,7 +447,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex p-2 bg-black text-white mt-1 m-0 rounded">
+                    <div class="d-flex p-2 bg-black text-white mt-1 m-0 rounded" data-aos="fade-down" data-aos-duration="3000">
                         <div class="full-width">
                             <div class="float-right arrow-container">
                                 <div class="arrow"></div>
@@ -524,6 +530,9 @@
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
