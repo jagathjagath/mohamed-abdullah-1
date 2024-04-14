@@ -1,0 +1,89 @@
+#animate-area {
+    font-size: 40px;
+    visibility: hidden;
+    position: fixed;
+    left: 200px;
+    top: 100px;
+}
+
+.program-title{
+    background-color: white;
+    padding: 10px;
+}
+
+.main-program-no {
+    display: inline-block;
+    text-align: center;
+    visibility: hidden;
+}
+
+.show-no {
+    animation-name: zoomout-to-show;
+    animation-duration: 4s;
+    visibility: visible;
+}
+
+.black-round {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.program-title {
+    display: inline-block;
+    opacity: 0;
+}
+
+.show-title {
+    animation-name: fadein-to-show;
+    animation-duration: 5s;
+    opacity: 1;
+}
+
+#program-detail-section {
+    margin-left: 350px;
+    display: none;
+}
+
+.program-subtitle ul li {
+    font-size: 24px;
+}
+
+.program-subtitle ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.display-none {
+    display: none;
+}
+
+@keyframes zoomout-to-show {
+    0% {
+        opacity: 0;
+        visibility: visible;
+        transform: scale(2, 2);
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes fadein-to-show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+main {
+    min-height: 600px;
+}
