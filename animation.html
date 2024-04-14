@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #animate-area {
+            font-size: 40px;
+            visibility: hidden;
+            position: fixed;
+            left: 200px;
+        }
+
+        .main-program-no {
+            display: inline-block;
+            text-align: center;
+            visibility: hidden;
+        }
+
+        .show-no {
+            animation-name: zoomout-to-show;
+            animation-duration: 4s;
+            visibility: visible;
+        }
+
+        .black-round {
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+        }
+
+        .program-title {
+            display: inline-block;
+            opacity: 0;
+        }
+
+        .show-title {
+            animation-name: fadein-to-show;
+            animation-duration: 5s;
+            opacity: 1;
+        }
+
+        #program-detail-section {
+            margin-left: 300px;
+            display: none;
+        }
+
+        .program-subtitle ul li {
+            font-size: 24px;
+        }
+
+        .program-subtitle ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .display-none {
+            display: none;
+        }
+
+        @keyframes zoomout-to-show {
+            0% {
+                opacity: 0;
+                visibility: visible;
+                transform: scale(2, 2);
+            }
+
+            100% {
+                opacity: 1;
+                visibility: visible;
+                transform: scale(1, 1);
+            }
+        }
+
+        @keyframes fadein-to-show {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        main {
+            min-height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <section>
+            <div id="animate-area">
+                <h1>
+                    <div class="main-program-no black-round" id="main-program-no-1">1</div>
+                    <div class="program-title">
+                        Contest Programs
+                        <div class="program-subtitle display-none">
+                            <ul>
+                                <li>
+                                    <small>
+                                        Pre-contest
+                                    </small>
+                                </li>
+                                <li>
+                                    <small>
+                                        Contest
+                                    </small>
+                                </li>
+                                <li>
+                                    <small>
+                                        Posing
+                                    </small>
+                                </li>
+                                <li>
+                                    <small>
+                                        Post Contest Therapy
+                                    </small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </h1>
+                <h1>
+                    <div class="main-program-no black-round" id="main-program-no-2">2</div>
+                    <div class="program-title">
+                        Regular Programs
+                        <div class="program-subtitle display-none">
+                            <ul>
+                                <li>
+                                    <small>
+                                        Pre-contest
+                                    </small>
+                                </li>
+                                <li>
+                                    <small>
+                                        Contest
+                                    </small>
+                                </li>
+                                <li>
+                                    <small>
+                                        Posing
+                                    </small>
+                                </li>
+                                <li>
+                                    <small>
+                                        Post Contest Therapy
+                                    </small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </h1>
+                <h1>
+                    <div class="main-program-no black-round" id="main-program-no-3">3</div>
+                    <div class="program-title">Healing Program</div>
+                </h1>
+                <h1>
+                    <div class="main-program-no black-round" id="main-program-no-4">4</div>
+                    <div class="program-title">Diet plans & programs</div>
+                </h1>
+            </div>
+        </section>
+        <section id="program-detail-section">
+            <div id="program-contest-detail">
+                <h1>Contest Program</h1>
+                <div style="display: grid; grid-template-columns: 3fr 1fr;">
+                    <div>
+                        <h3>Pre Contest preparation</h3>
+                        <p>
+                            This is the broader phase that typically starts weeks or months before the actual
+                            competition.
+                            The focus is on building muscle mass, improving symmetry, and reducing body fat to achieve a
+                            well-defined and aesthetic physique. Training intensity may increase, and nutrition is
+                            carefully
+                            monitored to support muscle growth while gradually decreasing body fat.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="img/gallery/gallery-1.png" style="width: 120px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        footer content
+    </footer>
+    <script>
+        function showZoomOut(Elem, timing) {
+            setTimeout(function () {
+                Elem.addClass("show-no");
+            }, timing);
+        }
+        function showTitle(Elem, timing) {
+            setTimeout(function () {
+                Elem.addClass("show-title");
+            }, timing);
+        }
+        $(document).ready(function () {
+            $("#animate-area").css({ "visibility": "visible" });
+            let timing = 1000;
+            $(".main-program-no").each(function () {
+                showZoomOut($(this), timing);
+                timing += 1000;
+            });
+            let titleTiming = 1200;
+            $(".program-title").each(function () {
+                showTitle($(this), titleTiming);
+                titleTiming += 1200;
+            });
+            let totalTiming = titleTiming;
+
+            setTimeout(() => {
+                let timing = 300;
+                $(".main-program-no").each(function () {
+                    $(this).hide();
+                    timing += 300;
+                });
+                $(".program-subtitle").slideDown(1000);
+            }, totalTiming + 1000);
+
+            setTimeout(() => {
+
+                $("#animate-area").animate({
+                    "font-size": "18px",
+                    "left": "20px",
+                    "top": "100px"
+                }, {
+                    duration: 4000
+                });
+                setTimeout(() => {
+                    $(".program-subtitle").slideUp(500);
+                    $("#program-detail-section").fadeIn(3000);
+                }, 4000)
+            }, (totalTiming + 2500));
+        });
+    </script>
+</body>
+
+</html>
