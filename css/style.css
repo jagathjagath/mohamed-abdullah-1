@@ -179,11 +179,7 @@ footer ul li {
     display: none;
 }
 
-.arrow1,
-.arrow2,
-.arrow3,
-.arrow4,
-.arrow5 {
+.arrow{
     width: 0;
     height: 0;
     border-right: 10px solid transparent;
@@ -195,11 +191,7 @@ footer ul li {
     cursor: pointer;
 }
 
-.arrow1.up,
-.arrow2.up,
-.arrow3.up,
-.arrow4.up,
-.arrow5.up {
+.arrow.up {
     border-bottom: none;
     border-top: 16px solid #F0EFF4;
     transform: rotate(180deg);
