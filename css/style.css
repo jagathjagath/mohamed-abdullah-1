@@ -233,9 +233,16 @@ footer ul li {
         font-size: 20px;
     }
 
-    #Home-headings {
+    #home-headings {
         font-size: 15px;
         text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 0rem;
+    }
+
+    #mobile-button {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     .mobile-block {
@@ -331,5 +338,9 @@ footer ul li {
 
     .container {
         padding: 0 1.5rem;
+    }
+
+    #buttons {
+        margin-top: 1rem;
     }
 }
