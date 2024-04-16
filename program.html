@@ -556,6 +556,19 @@
             }
         });
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        function showMenu() {
+            $("#header-nav").removeClass("mobile-hide");
+            $("#hide-menu-option").removeClass("mobile-hide");
+            $("#show-menu-option").addClass("mobile-hide");
+        }
+        function hideMenu() {
+            $("#header-nav").addClass("mobile-hide");
+            $("#hide-menu-option").addClass("mobile-hide");
+            $("#show-menu-option").removeClass("mobile-hide");
+        }
+    </script>
 </body>
 
 </html>
