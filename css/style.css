@@ -173,6 +173,10 @@ footer ul li {
     padding-left: 2rem;
 }
 
+.testimonial-highlight {
+    font-size: x-large;
+}
+
 #highlight-video {
     width: 700px;
     height: 360px;
@@ -253,6 +257,10 @@ footer ul li {
         padding-bottom: 50px;
     }
 
+    footer {
+        margin-top: 3rem;
+    }
+
     footer ul {
         font-size: 3.5vw;
     }
@@ -307,5 +315,21 @@ footer ul li {
 
     .mobile-show {
         display: initial !important;
+    }
+
+    .tm-highlight {
+        padding-right: 0;
+        padding-top: 0;
+        margin-top: 4rem;
+    }
+
+    .tm-image {
+        margin-left: 0;
+        margin-top: 2rem;
+        padding: 0rem 1rem;
+    }
+
+    .container {
+        padding: 0 1.5rem;
     }
 }
