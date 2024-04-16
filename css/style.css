@@ -3,8 +3,8 @@
     --hero-font: 'Anton', Helvetica, sans-serif;
     --footer-font: 'Inter', Helvetica, sans-serif;
     --primary-button-bgcolor: #FC8019;
-    --rating-star-bgcolor: gold;
-    --testimonial-bgcolor: #d3d3d3;
+    --rating-star-bgcolor: #EDA800;
+    --testimonial-bgcolor: #eceaea;
 }
 
 nav {
@@ -146,7 +146,7 @@ footer ul li {
 
 #about-highlight-section {
     background: lightgray;
-    /* border-radius: 1.5rem; */
+    border-radius: 0.5rem;
     color: #172121;
     max-width: 80%;
     padding: 0 10%;
@@ -229,8 +229,17 @@ footer ul li {
         font-size: 20px;
     }
 
+    #Home-headings {
+        font-size: 15px;
+        text-align: center;
+    }
+
     .mobile-block {
         display: block;
+    }
+
+    .about-pl-2 {
+        padding-left: 2rem;
     }
 
     button,
@@ -278,6 +287,10 @@ footer ul li {
         margin-top: 2rem;
         width: 100%;
         height: auto;
+    }
+
+    #about-page {
+        margin: 1rem;
     }
 
     .plan-left {
