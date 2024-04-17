@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/program.css">
-    <title>Document</title>
+    <title>Training Programs - Mohamed Abdullah | Contest - Fit - Diet - Rehab</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <style>
@@ -555,7 +555,7 @@
         });
     </script>
     <script>
-        function findElementAppear(element){
+        function findElementAppear(element) {
             const elementTop = element.offsetTop;
             let scrollTop = window.scrollY || window.pageYOffset;
             if (elementTop && scrollTop) {
@@ -572,29 +572,29 @@
                 return false;
             }
         }
-        function findElemByID(findID){
+        function findElemByID(findID) {
             const element = document.getElementById(findID);
             return findElementAppear(element);
         }
-        function setActiveMenu(setID){
-            if(!$("#"+setID).hasClass("active")){
+        function setActiveMenu(setID) {
+            if (!$("#" + setID).hasClass("active")) {
                 $(".program-title").removeClass("active");
-                $("#"+setID).addClass("active");
+                $("#" + setID).addClass("active");
             }
         }
         window.addEventListener("scroll", function () {
-            findElemByID("footer") ? $("#animate-area").hide() : $("#animate-area").show(); 
+            findElemByID("footer") ? $("#animate-area").hide() : $("#animate-area").show();
 
-            if(findElemByID('program-diet-detail')){
+            if (findElemByID('program-diet-detail')) {
                 setActiveMenu('diet-title');
             }
-            else if(findElemByID('program-healing-detail')){
+            else if (findElemByID('program-healing-detail')) {
                 setActiveMenu('healing-title');
             }
-            else if(findElemByID('program-regular-detail')){
+            else if (findElemByID('program-regular-detail')) {
                 setActiveMenu('regular-title');
             }
-            else if(findElemByID('program-contest-detail')){
+            else if (findElemByID('program-contest-detail')) {
                 setActiveMenu('contest-title');
             }
         });
