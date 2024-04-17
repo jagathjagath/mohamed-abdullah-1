@@ -176,6 +176,10 @@ footer ul li {
     text-shadow: 0 0 3px #FFFFFF;
 }
 
+.black-shadow-text {
+    text-shadow: 0 0 3px #0000;
+}
+
 .bg-black {
     background-color: #172121;
 }
