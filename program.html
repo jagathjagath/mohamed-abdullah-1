@@ -178,7 +178,9 @@
                 <h1>
                     <div class="main-program-no black-round" id="main-program-no-1">1</div>
                     <div class="program-title">
-                        Contest Programs
+                        <a href="#">
+                            Contest Programs
+                        </a>
                         <div class="program-subtitle display-none">
                             <ul>
                                 <li>
@@ -208,7 +210,9 @@
                 <h1>
                     <div class="main-program-no black-round" id="main-program-no-2">2</div>
                     <div class="program-title">
-                        Regular Programs
+                        <a href="#">
+                            Regular Programs
+                        </a>
                         <div class="program-subtitle display-none">
                             <ul>
                                 <li>
@@ -237,11 +241,19 @@
                 </h1>
                 <h1>
                     <div class="main-program-no black-round" id="main-program-no-3">3</div>
-                    <div class="program-title">Healing Program</div>
+                    <div class="program-title">
+                        <a href="#">
+                            Healing Program
+                        </a>
+                    </div>
                 </h1>
                 <h1>
                     <div class="main-program-no black-round" id="main-program-no-4">4</div>
-                    <div class="program-title">Diet plans & programs</div>
+                    <div class="program-title">
+                        <a href="#">
+                            Diet plans & programs
+                        </a>
+                    </div>
                 </h1>
             </div>
         </section>
@@ -489,15 +501,15 @@
         }
         $(document).ready(function () {
             $("#animate-area").css({ "visibility": "visible" });
-            let timing = 1000;
+            let timing = 400;
             $(".main-program-no").each(function () {
                 showZoomOut($(this), timing);
-                timing += 1000;
+                timing += 400;
             });
-            let titleTiming = 1200;
+            let titleTiming = 600;
             $(".program-title").each(function () {
                 showTitle($(this), titleTiming);
-                titleTiming += 1200;
+                titleTiming += 600;
             });
             let totalTiming = titleTiming;
 
@@ -507,8 +519,8 @@
                     $(this).hide();
                     timing += 300;
                 });
-                $(".program-subtitle").slideDown(1000);
-            }, totalTiming + 1000);
+                $(".program-subtitle").slideDown(500);
+            }, totalTiming + 500);
 
             setTimeout(() => {
 
@@ -517,14 +529,16 @@
                     "left": "20px",
                     "top": "100px"
                 }, {
-                    duration: 4000
+                    duration: 2000
                 });
                 setTimeout(() => {
                     $(".program-subtitle").slideUp(500);
                     $("#program-detail-section").fadeIn(3000);
                     $("footer").show();
-                }, 4000)
-            }, (totalTiming + 2500));
+                    $(".program-title>a").addClass("btn")
+                    $(".program-title>a").addClass("btn-action")
+                }, 2000)
+            }, (totalTiming + 700));
         });
     </script>
     <script>
