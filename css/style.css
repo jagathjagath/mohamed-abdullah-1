@@ -133,6 +133,27 @@ footer ul li {
     transition: 50ms;
 }
 
+.program-title .btn-action{
+    border-radius: 12px;
+}
+
+.program-title .btn-action:hover{
+    padding: 15px 30px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.program-title .btn-action.active{
+    background-color: var(--primary-mono-bgcolor);
+    padding: 15px 50px;
+    opacity: 1 !important;
+}
+
+.program-title .btn-action.active:hover{
+    color: white;
+    transition: 0.5s;
+}
+
 .white-shadow-text {
     text-shadow: 0 0 3px #FFFFFF;
 }
