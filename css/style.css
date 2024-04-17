@@ -31,6 +31,10 @@ nav ul li a:hover {
     transition: 0.3s;
 }
 
+.hero-font{
+    font-family: var(--hero-font);
+}
+
 footer ul li a:hover {
     font-weight: 600;
     transition: 0.3s;
@@ -75,6 +79,14 @@ footer ul li {
 
 .br-r-1 {
     border-right: 2px solid #000;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.f-16 {
+    font-size: 16px;
 }
 
 .f-18 {
