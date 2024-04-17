@@ -24,6 +24,7 @@
 
         .program-detail{
             border: 1px solid lightgray;
+            background-color: beige;
             margin: 20px;
             padding: 20px;
             border-radius: 10px;
@@ -177,7 +178,7 @@
             <div id="animate-area">
                 <h1>
                     <div class="main-program-no black-round" id="main-program-no-1">1</div>
-                    <div class="program-title">
+                    <div class="program-title" id="contest-title">
                         <a href="#">
                             Contest Programs
                         </a>
@@ -209,7 +210,7 @@
                 </h1>
                 <h1>
                     <div class="main-program-no black-round" id="main-program-no-2">2</div>
-                    <div class="program-title">
+                    <div class="program-title" id="regular-title">
                         <a href="#">
                             Regular Programs
                         </a>
@@ -241,7 +242,7 @@
                 </h1>
                 <h1>
                     <div class="main-program-no black-round" id="main-program-no-3">3</div>
-                    <div class="program-title">
+                    <div class="program-title" id="healing-title">
                         <a href="#">
                             Healing Program
                         </a>
@@ -249,7 +250,7 @@
                 </h1>
                 <h1>
                     <div class="main-program-no black-round" id="main-program-no-4">4</div>
-                    <div class="program-title">
+                    <div class="program-title" id="diet-title">
                         <a href="#">
                             Diet plans & programs
                         </a>
@@ -537,33 +538,53 @@
                     $("footer").show();
                     $(".program-title>a").addClass("btn")
                     $(".program-title>a").addClass("btn-action")
+                    setActiveMenu('contest-title');
                 }, 2000)
             }, (totalTiming + 700));
         });
     </script>
     <script>
-        window.addEventListener("scroll", function () {
-            const element = document.getElementById("footer");
-
-            if (element) {
-                const elementTop = element.offsetTop;
-                let scrollTop = window.scrollY || window.pageYOffset;
-                if (elementTop && scrollTop) {
-                    scrollTop += 360;
-                    // console.log("element top: ", elementTop, "scrolltop: ", scrollTop);
-                    if (scrollTop > elementTop) {
-                        $("#animate-area").hide();
-                    }
-                    else {
-                        $("#animate-area").show();
-                    }
+        function findElementAppear(element){
+            const elementTop = element.offsetTop;
+            let scrollTop = window.scrollY || window.pageYOffset;
+            if (elementTop && scrollTop) {
+                scrollTop += 360;
+                // console.log("element top: ", elementTop, "scrolltop: ", scrollTop);
+                if (scrollTop > elementTop) {
+                    return true;
                 }
                 else {
-                    $("#animate-area").show();
+                    return false;
                 }
-            } else {
-                $("#animate-area").show();
-                // console.error("Element with ID '" + elementId + "' not found.");
+            }
+            else {
+                return false;
+            }
+        }
+        function findElemByID(findID){
+            const element = document.getElementById(findID);
+            return findElementAppear(element);
+        }
+        function setActiveMenu(setID){
+            if(!$("#"+setID).hasClass("active")){
+                $(".program-title").removeClass("active");
+                $("#"+setID).addClass("active");
+            }
+        }
+        window.addEventListener("scroll", function () {
+            findElemByID("footer") ? $("#animate-area").hide() : $("#animate-area").show(); 
+
+            if(findElemByID('program-diet-detail')){
+                setActiveMenu('diet-title');
+            }
+            else if(findElemByID('program-healing-detail')){
+                setActiveMenu('healing-title');
+            }
+            else if(findElemByID('program-regular-detail')){
+                setActiveMenu('regular-title');
+            }
+            else if(findElemByID('program-contest-detail')){
+                setActiveMenu('contest-title');
             }
         });
     </script>

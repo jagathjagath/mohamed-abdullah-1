@@ -143,13 +143,13 @@ footer ul li {
     transition: 0.3s;
 }
 
-.program-title .btn-action.active{
+.program-title.active .btn-action{
     background-color: var(--primary-mono-bgcolor);
     padding: 15px 50px;
     opacity: 1 !important;
 }
 
-.program-title .btn-action.active:hover{
+.program-title.active .btn-action:hover{
     color: white;
     transition: 0.5s;
 }
