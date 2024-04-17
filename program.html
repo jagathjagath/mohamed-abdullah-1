@@ -528,30 +528,43 @@
         });
     </script>
     <script>
-        window.addEventListener("scroll", function() {
+        window.addEventListener("scroll", function () {
             const element = document.getElementById("footer");
-            
+
             if (element) {
-              const elementTop = element.offsetTop;
-              let scrollTop = window.scrollY || window.pageYOffset;
-              if(elementTop && scrollTop){
-                scrollTop += 360;
-                // console.log("element top: ", elementTop, "scrolltop: ", scrollTop);
-                if(scrollTop>elementTop){
-                    $("#animate-area").hide();
+                const elementTop = element.offsetTop;
+                let scrollTop = window.scrollY || window.pageYOffset;
+                if (elementTop && scrollTop) {
+                    scrollTop += 360;
+                    // console.log("element top: ", elementTop, "scrolltop: ", scrollTop);
+                    if (scrollTop > elementTop) {
+                        $("#animate-area").hide();
+                    }
+                    else {
+                        $("#animate-area").show();
+                    }
                 }
-                else{
+                else {
                     $("#animate-area").show();
                 }
-              }
-              else{
-                $("#animate-area").show();
-              }
             } else {
                 $("#animate-area").show();
                 // console.error("Element with ID '" + elementId + "' not found.");
-            }            
+            }
         });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        function showMenu() {
+            $("#header-nav").removeClass("mobile-hide");
+            $("#hide-menu-option").removeClass("mobile-hide");
+            $("#show-menu-option").addClass("mobile-hide");
+        }
+        function hideMenu() {
+            $("#header-nav").addClass("mobile-hide");
+            $("#hide-menu-option").addClass("mobile-hide");
+            $("#show-menu-option").removeClass("mobile-hide");
+        }
     </script>
 </body>
 
