@@ -31,13 +31,19 @@ nav ul li a:hover {
     transition: 0.3s;
 }
 
-.hero-font{
+.hero-font {
     font-family: var(--hero-font);
 }
 
 footer ul li a:hover {
     font-weight: 600;
     transition: 0.3s;
+}
+
+.contact:hover {
+    font-weight: 600;
+    transition: 0.3s;
+    color: #F0EFF4;
 }
 
 a:hover {
@@ -155,13 +161,13 @@ footer ul li {
     transition: 0.3s;
 }
 
-.program-title.active .btn-action{
+.program-title.active .btn-action {
     background-color: var(--primary-mono-bgcolor);
     padding: 15px 50px;
     opacity: 1 !important;
 }
 
-.program-title.active .btn-action:hover{
+.program-title.active .btn-action:hover {
     color: white;
     transition: 0.5s;
 }
