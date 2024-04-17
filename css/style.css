@@ -129,7 +129,7 @@ footer ul li {
 .btn-action:hover {
     background-color: var(--primary-mono-bgcolor);
     color: white;
-    font-size: 110%;
+    padding: 15px 50px;
     transition: 50ms;
 }
 
