@@ -149,13 +149,14 @@ footer ul li {
     border: 0px;
     font-size: medium;
     font-weight: 700;
-    border-radius: 24px;
+    border-radius: 18px;
     transition: 0.3s;
 }
 
 .btn-action:hover {
     background-color: var(--primary-mono-bgcolor);
     color: white;
+    cursor: pointer;
     padding: 15px 50px;
     transition: 50ms;
 }
@@ -198,6 +199,10 @@ footer ul li {
 }
 
 .highlight-bg {
+    background-color: #FC8019;
+}
+
+.plan-bg {
     background-color: beige;
 }
 
@@ -229,6 +234,10 @@ footer ul li {
     border-radius: 0.5rem;
     color: #172121;
     padding: 0 10%;
+}
+
+.plan-container {
+    padding: 50px 45px;
 }
 
 
