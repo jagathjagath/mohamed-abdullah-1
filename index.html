@@ -554,29 +554,31 @@
             'img/program/program-2.png',
             'img/program/program-3.png',
         ];
-        const imageElements = document.querySelectorAll('.image');
+        var imageElements = document.querySelectorAll('.image');
         let isFlipping = false;
 
         function flipImage(index) {
             if (!isFlipping) {
-                isFlipping = true;
+                isFlipping = false;
                 const imageElement = imageElements[index];
                 const nextIndex = (index + 1) % images.length;
                 const nextImage = images[nextIndex];
-                imageElement.classList.add('flipped'); // Apply flip transition
+                imageElement.classList.add('flipped');
                 setTimeout(() => {
-                    imageElement.src = nextImage; // Change src after transition
-                    imageElement.classList.remove('flipped'); // Reset flip transition
-                    isFlipping = false;
-                }, 200); // Adjust timing to match transition duration
+                    imageElement.src = nextImage;
+                    setTimeout(() => {
+                        imageElement.classList.remove('flipped');
+                        isFlipping = false;
+                    }, 200);
+                }, 200);
             }
         }
 
-        // Click event listener to flip each image individually
         imageElements.forEach((element, index) => {
             element.addEventListener('click', () => flipImage(index));
         });
     </script>
+
 </body>
 
 </html>
