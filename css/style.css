@@ -48,6 +48,15 @@ nav {
     z-index: 1;
 }
 
+.content img {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.content img:hover {
+    opacity: 0.5;
+}
+
 .hero-font {
     font-family: var(--hero-font);
 }
