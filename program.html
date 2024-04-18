@@ -526,7 +526,7 @@
                     <div>
                         <div class="mt-4 f-12 text-right">
                             <div>
-                                <i class="ri-arrow-right-s-line footer-icon-bg"></i> Terms and Condition
+                                <i class="ri-arrow-right-s-line footer-icon-bg"></i> Terms and Conditions
                             </div>
                             <div>
                                 <i class="ri-arrow-right-s-line footer-icon-bg"></i> Privacy Policy
@@ -567,7 +567,7 @@
                 duration: 2000
             });
         }
-        $(document).ready(function () {
+        function startAnimate() {
             $("#animate-area").css({ "visibility": "visible" });
 
             // no to zoom in appear
@@ -606,6 +606,12 @@
                     setActiveMenu('contest-title');
                 }, 2000)
             }, (totalTiming + 700));
+        }
+        $(document).ready(function () {
+            if ($(document).width() >= 600)
+                startAnimate();
+            else
+                $("footer").show();
         });
     </script>
     <script>
