@@ -511,44 +511,58 @@
                 Elem.addClass("show-title");
             }, timing);
         }
+        function timeAnimate(className, timing, functionName){
+            let interval = timing;
+            $("."+className).each(function () {
+                (functionName) ? functionName($(this), timing) : $(this).hide();
+                timing += interval;
+            });
+        }
+        function fixedProgramTitle(){
+            $("#animate-area").animate({
+                "font-size": "18px",
+                "left": "20px",
+                "top": "100px"
+            }, {
+                duration: 2000
+            });
+        }
         $(document).ready(function () {
             $("#animate-area").css({ "visibility": "visible" });
-            let timing = 400;
-            $(".main-program-no").each(function () {
-                showZoomOut($(this), timing);
-                timing += 400;
-            });
-            let titleTiming = 600;
-            $(".program-title").each(function () {
-                showTitle($(this), titleTiming);
-                titleTiming += 600;
-            });
-            let totalTiming = titleTiming;
+
+            // no to zoom in appear
+            timeAnimate('main-program-no', 400, showZoomOut);
+            // title to fade in appear
+            timeAnimate('program-title', 600, showTitle);
+
+            let totalTiming = 600*4;
 
             setTimeout(() => {
-                let timing = 300;
-                $(".main-program-no").each(function () {
-                    $(this).hide();
-                    timing += 300;
-                });
+
+                // no to hide
+                timeAnimate('main-program-no', 300);
+                // sub topics to show
                 $(".program-subtitle").slideDown(500);
+
             }, totalTiming + 500);
 
             setTimeout(() => {
 
-                $("#animate-area").animate({
-                    "font-size": "18px",
-                    "left": "20px",
-                    "top": "100px"
-                }, {
-                    duration: 2000
-                });
+                fixedProgramTitle();
+
                 setTimeout(() => {
+                    // sub topics to hide
                     $(".program-subtitle").slideUp(500);
+                    // main content to show
                     $("#program-detail-section").fadeIn(3000);
+
+                    // footer show after all animation
                     $("footer").show();
+
+                    // btn kind of design for title
                     $(".program-title>a").addClass("btn")
                     $(".program-title>a").addClass("btn-action")
+
                     setActiveMenu('contest-title');
                 }, 2000)
             }, (totalTiming + 700));
