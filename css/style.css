@@ -83,6 +83,14 @@ footer li a:hover {
     color: #F0EFF4;
 }
 
+footer div a {
+    color: #F0EFF4;
+}
+
+footer div a:hover {
+    color: #F0EFF4;
+}
+
 footer ul {
     font-size: 14px;
 }
@@ -91,9 +99,28 @@ footer ul li {
     margin-bottom: 10px;
 }
 
+.footer-icon {
+    cursor: pointer;
+}
+
+.footer-icon-bg {
+    color: #EDA800;
+}
 
 .br-r-1 {
     border-right: 2px solid #000;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.f-12 {
+    font-size: 12px;
+}
+
+.f-13 {
+    font-size: 13px;
 }
 
 .f-14 {
