@@ -388,8 +388,17 @@ footer ul li {
         margin-bottom: 1.5rem;
     }
 
+    #featurette-lists {
+        padding: 0.5rem;
+    }
+
+    .plan-button {
+        margin: 0.75rem;
+    }
+
     .mobile-block {
         display: block;
+        padding: 0.75rem;
     }
 
     .about-pl-2 {
@@ -453,10 +462,12 @@ footer ul li {
 
     .plan-left {
         padding-left: 0;
+        padding-top: 1.5rem;
     }
 
     .mobile-center {
         text-align: center;
+        padding-top: 1rem;
     }
 
     .mobile-hide {
@@ -489,6 +500,14 @@ footer ul li {
 
     #progress-section {
         margin: 0;
+    }
+
+    .plan-container {
+        padding: 0.25rem;
+    }
+
+    .mobile {
+        padding: 1rem 1rem;
     }
 }
 
