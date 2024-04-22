@@ -355,7 +355,12 @@ footer ul li {
     border-radius: 20px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 601px),
+(max-width: 900px) and (orientation: landscape) {
+
+    .menu-rotate {
+        display: none;
+    }
 
     .rotate-20 {
         font-size: 20px;
@@ -438,6 +443,15 @@ footer ul li {
     .plan-grid {
         grid-template-columns: 1fr;
     }
+
+    .mobile-hide {
+        display: none !important;
+    }
+
+    .mobile-show {
+        display: initial !important;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -551,7 +565,7 @@ footer ul li {
     #highlight-video {
         margin-top: 2rem;
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     #about-page {
