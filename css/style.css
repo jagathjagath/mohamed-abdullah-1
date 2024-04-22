@@ -355,6 +355,91 @@ footer ul li {
     border-radius: 20px;
 }
 
+@media only screen and (max-width: 900px) {
+
+    .rotate-20 {
+        font-size: 20px;
+        margin-top: 8rem;
+    }
+
+    .rotate-30 {
+        font-size: 30px;
+    }
+
+    .w-16 {
+        width: 20rem;
+    }
+
+    .white-shadow-text {
+        margin-top: 25rem;
+        margin-left: 2rem;
+    }
+
+    .hero-button {
+        text-shadow: 0 0 3px #FFFFFF;
+        margin-top: 15rem;
+    }
+
+    .hero-img {
+        margin-top: 10rem;
+    }
+
+    .hero-name {
+        margin-top: 0rem !important;
+        padding-top: 0rem !important;
+    }
+
+    .heading-rotate {
+        margin-top: 2rem;
+    }
+
+    #mobile-button {
+        margin-top: 3rem;
+    }
+
+    .imageContainer {
+        height: 300px;
+    }
+
+    #gallery-section {
+        display: none;
+    }
+
+
+    #highlight-section {
+        display: inline;
+    }
+
+    #highlight-video {
+        margin-top: 10rem;
+        margin-left: 5rem;
+        width: 80%;
+        height: 50%;
+    }
+
+    .progress-img {
+        display: none;
+    }
+
+    .highlight-content {
+        width: 100%;
+        padding-right: 12rem;
+    }
+
+    .container {
+        padding: 50px 50px;
+    }
+
+    .dg-1-1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .plan-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     #gallery-section {
         display: none;
@@ -521,53 +606,5 @@ footer ul li {
 
     .mobile {
         padding: 1rem 1rem;
-    }
-}
-
-
-@media only screen and (max-width: 900px) {
-
-    .f-24 {
-        font-size: 15px;
-    }
-
-    .f-40 {
-        font-size: 30px;
-    }
-
-    .w-16 {
-        width: 18rem;
-    }
-
-    #gallery-section {
-        display: none;
-    }
-
-    .mobile-hide-rotate {
-        display: none !important;
-    }
-
-    #highlight-section {
-        display: inline;
-    }
-
-    #highlight-video {
-        margin-top: 10rem;
-        margin-left: 5rem;
-        width: 80%;
-        height: 50%;
-    }
-
-    .progress-img {
-        display: none;
-    }
-
-    .highlight-content {
-        width: 100%;
-        padding-right: 12rem;
-    }
-
-    .container {
-        padding: 50px 50px;
     }
 }
