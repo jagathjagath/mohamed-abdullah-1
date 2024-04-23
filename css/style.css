@@ -135,6 +135,10 @@ footer ul li {
     font-size: 18px;
 }
 
+.f-20 {
+    font-size: 20px;
+}
+
 .f-24 {
     font-size: 24px;
 }
@@ -267,21 +271,9 @@ footer ul li {
     padding: 50px 45px;
 }
 
-
-.imageContainer {
-    position: relative;
-    min-width: 80%;
-    height: 450px;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-.imageContainer img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.program-images img {
+    width: 80%;
+    margin: 0 auto;
     transition: transform 0.20s ease, opacity 0.20s ease;
 }
 
