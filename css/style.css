@@ -347,6 +347,105 @@ footer ul li {
     border-radius: 20px;
 }
 
+@media only screen and (min-width: 601px),
+(max-width: 900px) and (orientation: landscape) {
+
+    .menu-rotate {
+        display: none;
+    }
+
+    .rotate-20 {
+        font-size: 20px;
+        margin-top: 8rem;
+    }
+
+    .rotate-30 {
+        font-size: 30px;
+    }
+
+    .w-16 {
+        width: 20rem;
+    }
+
+    .white-shadow-text {
+        margin-top: 25rem;
+        margin-left: 2rem;
+    }
+
+    .hero-button {
+        text-shadow: 0 0 3px #FFFFFF;
+        margin-top: 15rem;
+    }
+
+    .hero-img {
+        margin-top: 10rem;
+    }
+
+    .hero-name {
+        margin-top: 0rem !important;
+        padding-top: 0rem !important;
+    }
+
+    .heading-rotate {
+        margin-top: 2rem;
+    }
+
+    #mobile-button {
+        margin-top: 3rem;
+    }
+
+    .imageContainer {
+        height: 300px;
+    }
+
+    #gallery-section {
+        display: none;
+    }
+
+
+    #highlight-section {
+        display: inline;
+    }
+
+    #highlight-video {
+        margin-top: 10rem;
+        margin-left: 5rem;
+        width: 80%;
+        height: 50%;
+    }
+
+    .progress-img {
+        display: none;
+    }
+
+    .highlight-content {
+        width: 100%;
+        padding-right: 12rem;
+    }
+
+    .container {
+        padding: 50px 50px;
+    }
+
+    .dg-1-1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .plan-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mobile-hide {
+        display: none !important;
+    }
+
+    .mobile-show {
+        display: initial !important;
+    }
+
+}
+
 @media only screen and (max-width: 600px) {
     #gallery-section {
         display: none;
@@ -384,6 +483,15 @@ footer ul li {
         padding: 0.5rem;
     }
 
+    #highlight-section {
+        margin-top: 3rem;
+    }
+
+
+    .review-img {
+        margin-top: 1rem;
+    }
+
     .plan-button {
         margin: 0.75rem;
     }
@@ -395,6 +503,10 @@ footer ul li {
 
     .about-pl-2 {
         padding-left: 2rem;
+    }
+
+    .program-content {
+        margin-top: 2rem;
     }
 
     button,
@@ -445,7 +557,7 @@ footer ul li {
     #highlight-video {
         margin-top: 2rem;
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     #about-page {
@@ -500,13 +612,5 @@ footer ul li {
 
     .mobile {
         padding: 1rem 1rem;
-    }
-}
-
-@media only screen and (min-width: 2000px),
-(max-width: 1000px) {
-    nav ul li a {
-        font-size: 18px;
-        justify-content: space-evenly;
     }
 }
