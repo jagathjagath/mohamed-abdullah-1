@@ -125,24 +125,39 @@
                 <div class="d-grid df-center f-24" id="home-headings">
                     <h1>What will you get from this <span class="highlight-text">Program</span>?</h1>
                 </div>
-                <div class="d-grid dg-1-1-1 gap-2 mt-5 program-content">
-                    <div class="text-center imageContainer mt-1 content">
-                        <img class="image" src="img/program/program-1.png" class="full-width" alt="">
+                <div class="d-grid dg-1-1-1 gap-2 mt-2 program-content">
+                    <div class="text-center program-images mt-1 content">
+                        <div class="relative full-width">
+                            <div class="absolute full-width text-white mt-10 f-20">
+                                Core Strengthening
+                            </div>    
+                        </div>
+                        <img src="img/program/program-1.png" class="full-width" alt="">
                     </div>
-                    <div class="text-center imageContainer mt-1 content">
-                        <img class="image" src="img/program/program-2.png" class="full-width" alt="">
+                    <div class="text-center program-images mt-1 content">
+                        <div class="relative full-width">
+                            <div class="absolute full-width text-white mt-10 f-20">
+                                Cross Fit
+                            </div>    
+                        </div>
+                        <img src="img/program/program-2.png" class="full-width" alt="">
                     </div>
-                    <div class="text- imageContainer mt-1 content">
-                        <img class="image" src="img/program/program-3.png" class="full-width" alt="">
+                    <div class="text-center program-images mt-1 content">
+                        <div class="relative full-width">
+                            <div class="absolute full-width text-white mt-10 f-20">
+                                Contest Preparation
+                            </div>    
+                        </div>
+                        <img src="img/program/program-3.png" class="full-width" alt="">
                     </div>
                 </div>
-                <div class="d-flex df-center mt-5" id="mobile-button">
+                <div class="d-flex df-center mt-2" id="mobile-button">
                     <button class="btn btn-action">Explore All Programs</button>
                 </div>
             </div>
         </section>
         <section id="progress-section">
-            <div class="plan-container plan-card mx-2">
+            <div class="plan-container plan-card mx-2 mt-3">
                 <div class="d-grid dg-1-2">
                     <div class="mobile-center">
                         <img src="img/progress/progress-img.png" alt="">
@@ -281,7 +296,7 @@
                     <h1><span class="highlight-text">Client's</span> Achievements and Transformations
                     </h1>
                 </div>
-                <div class="rounded highlight-bg mt-5 p-5 mx-2">
+                <div class="rounded highlight-bg mt-2 p-5 mx-2">
                     <div class="d-flex df-center align-center gap-0">
                         <img src="img/gallery/gallery-1.png" height="220">
                         <img src="img/gallery/gallery-2.png" height="260">
@@ -297,7 +312,7 @@
                 <div class="mt-4 d-flex df-center f-24" id="home-headings">
                     <h1>See what other <span class="highlight-text">client's</span> have to say</h1>
                 </div>
-                <div class="d-grid dg-1-1-1 mt-5">
+                <div class="d-grid dg-1-1-1 mt-1">
                     <div data-aos="zoom-in-up" data-aos-duration="1000">
                         <div class="p-2">
                             <img src="img/review/review-1.png" width="100%" alt="">
@@ -360,7 +375,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex df-center mobile-block mt-3" id="mobile-button">
+                <div class="d-flex df-center mobile-block mt-2" id="mobile-button">
                     <button class="btn btn-action" data-aos="fade-down" data-aos-duration="1000">
                         <i class="ri-whatsapp-fill"></i>
                         Contact Mohammed Abdullah
@@ -589,33 +604,8 @@
         }
     </script>
     <script>
-        const images = [
-            'img/program/program-1.png',
-            'img/program/program-2.png',
-            'img/program/program-3.png',
-        ];
-        var imageElements = document.querySelectorAll('.image');
-        let isFlipping = false;
-
-        function flipImage(index) {
-            if (!isFlipping) {
-                isFlipping = true;
-                const imageElement = imageElements[index];
-                const nextIndex = (index + 1) % images.length;
-                const nextImage = images[nextIndex];
-                imageElement.classList.add('flipped');
-                setTimeout(() => {
-                    imageElement.src = nextImage;
-                    setTimeout(() => {
-                        imageElement.classList.remove('flipped');
-                        isFlipping = false;
-                    }, 200);
-                }, 200);
-            }
-        }
-
-        imageElements.forEach((element, index) => {
-            element.addEventListener('click', () => flipImage(index));
+        $(".program-images").click(function(){
+            $(this).children('img').toggleClass('flipped');
         });
     </script>
 
