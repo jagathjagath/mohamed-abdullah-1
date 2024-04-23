@@ -350,7 +350,7 @@ footer ul li {
 @media only screen and
 (max-width: 900px) {
 
-    .menu-rotate {
+    .menu-rotate,#progress-section {
         display: none;
     }
 
