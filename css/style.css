@@ -347,10 +347,10 @@ footer ul li {
     border-radius: 20px;
 }
 
-@media only screen and
-(max-width: 900px) {
+@media only screen and (max-width: 900px) {
 
-    .menu-rotate,#progress-section {
+    .menu-rotate,
+    #progress-section {
         display: none;
     }
 
