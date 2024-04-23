@@ -29,6 +29,14 @@ a {
     padding: 50px 100px;
 }
 
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
 .d-flex {
     display: flex;
     gap: 2rem;
