@@ -60,6 +60,15 @@
     display: none;
 }
 
+.program-content img {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.program-content img:hover {
+    opacity: 0.5;
+}
+
 @keyframes zoomout-to-show {
     0% {
         opacity: 0;

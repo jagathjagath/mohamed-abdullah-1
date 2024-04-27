@@ -91,9 +91,13 @@ body {
     border-right: 2px solid lightgray;
 }
 .dark-mode .program-title{
+    transition: background-color 0.5s ease;
     background-color: #121212;
     color: #ffff;
 }
 .dark-mode #contest-title a, #regular-title a, #healing-title a, #diet-title a {
     color: #ffff;
+}
+.dark-mode .program-detail{
+    color: #121212;
 }
