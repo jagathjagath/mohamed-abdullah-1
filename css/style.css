@@ -112,6 +112,15 @@ nav ul li a:hover {
     background-color: #454545;
     color: #ffff;
 }
+.dark-mode #about-highlight-section {
+    background: rgb(158, 155, 155);
+    border-radius: 0.5rem;
+    color: #172121;
+    padding: 0 10%;
+}
+.dark-mode .br-r-1 {
+    border-right: 2px solid lightgray;
+}
 
 .program-content img {
     opacity: 1;
