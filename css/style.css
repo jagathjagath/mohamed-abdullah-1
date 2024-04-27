@@ -75,7 +75,7 @@ nav ul li a:hover {
     transform: translateX(15px);
 }
 .dark-mode .white-shadow-text{
-    text-shadow: 0 0 4px #FFFFFF;
+    text-shadow: 0 0 2px #FFFFFF;
 }
 .dark-mode .program-images{
     box-shadow: 1px 1px 2px 2px rgb(238, 236, 236);
@@ -95,9 +95,21 @@ nav ul li a:hover {
     color: #fff;
 }
 .dark-mode nav {
-    background-color: #1B1F1F;
+    background-color: #454545;
 }
 .dark-mode nav li a {
+    color: #ffff;
+}
+.dark-mode .bg-black {
+    background-color: #454545;
+}
+.dark-mode footer {
+    font-family: var(--footer-font);
+    background-color: #454545;
+    color: #F0EFF4;
+}
+.dark-mode .plan-bg{
+    background-color: #454545;
     color: #ffff;
 }
 
