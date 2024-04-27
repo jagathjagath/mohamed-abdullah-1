@@ -1,0 +1,99 @@
+body {
+    transition: background-color 0.5s ease;
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 30px;
+    left: 20px;
+    z-index: 9999;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 16px;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    background-color: #aaa;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.dark-mode .toggle {
+    background-color: #333;
+}
+
+.dark-mode .toggle::after {
+    transform: translateX(15px);
+}
+.dark-mode .white-shadow-text{
+    text-shadow: 0 0 2px #FFFFFF;
+}
+.dark-mode .program-images{
+    box-shadow: 1px 1px 2px 2px rgb(238, 236, 236);
+    border-radius: 5px;
+}
+.dark-mode .plan-card{
+    box-shadow: 0px 0px 3px 2px rgb(238, 236, 236);
+    border-radius: 5px;
+}
+
+.text {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+.dark-mode nav {
+    background-color: #454545;
+}
+.dark-mode nav li a {
+    color: #ffff;
+}
+.dark-mode .bg-black {
+    background-color: #454545;
+}
+.dark-mode footer {
+    font-family: var(--footer-font);
+    background-color: #454545;
+    color: #F0EFF4;
+}
+.dark-mode .plan-bg{
+    background-color: #454545;
+    color: #ffff;
+}
+.dark-mode #about-highlight-section {
+    background: rgb(158, 155, 155);
+    border-radius: 0.5rem;
+    color: #172121;
+    padding: 0 10%;
+}
+.dark-mode .br-r-1 {
+    border-right: 2px solid lightgray;
+}
+.dark-mode .program-title{
+    background-color: #121212;
+    color: #ffff;
+}
+.dark-mode #contest-title a, #regular-title a, #healing-title a, #diet-title a {
+    color: #ffff;
+}
