@@ -33,20 +33,32 @@
                     </span>
                 </div>
             </div>
-            <ul class="d-flex df-around p-2 mobile-hide" id="header-nav">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="program.html">Training Program</a>
-                </li>
-                <li>
-                    <a href="testimonial.html">Testimonial</a>
-                </li>
-                <li>
-                    <a href="about.html">About Mohammed Abdullah</a>
-                </li>
-            </ul>
+            <div class="d-grid dg-1-6">
+                <div>
+                    <div class="pt-2 pl-1">
+                        <button class="dark-button dark-mode-toggle" id="darkModeToggle">
+                            <span class="toggle"></span>
+                            <span class="text"></span>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <ul class="d-flex df-around pb-2 mobile-hide" id="header-nav">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="program.html">Training Program</a>
+                        </li>
+                        <li>
+                            <a href="testimonial.html">Testimonial</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About Mohammed Abdullah</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -102,7 +114,7 @@
                                 </div>
                                 <div class="px-05">
                                     <h4>Chandler</h4>
-                                    <p class="py-05">
+                                    <p class="py-05 review-content">
                                         I've tried numerous gyms in the past, but none compare to Mohammed Abdullah's
                                         Gym.
                                     </p>
@@ -121,7 +133,7 @@
                                 </div>
                                 <div class="px-05">
                                     <h4>Chandler</h4>
-                                    <p class="py-05">
+                                    <p class="py-05 review-content">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas nostrum
                                         incidunt autem error recusandae, necessitatibus, beatae eum natus dolores.
                                     </p>
@@ -140,7 +152,7 @@
                                 </div>
                                 <div class="px-05">
                                     <h4>Chandler</h4>
-                                    <p class="py-05">
+                                    <p class="py-05 review-content">
                                         I've tried numerous gyms in the past, but none compare to Mohammed Abdullah's
                                         Gym.
                                     </p>
@@ -161,7 +173,7 @@
                                 </div>
                                 <div class="px-05">
                                     <h4>Chandler</h4>
-                                    <p class="py-05">
+                                    <p class="py-05 review-content">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas nostrum
                                         incidunt autem error recusandae, necessitatibus, beatae eum natus dolores.
                                     </p>
@@ -180,7 +192,7 @@
                                 </div>
                                 <div class="px-05">
                                     <h4>Chandler</h4>
-                                    <p class="py-05">
+                                    <p class="py-05 review-content">
                                         I've tried numerous gyms in the past, but none compare to Mohammed Abdullah's
                                         Gym.
                                     </p>
@@ -199,7 +211,7 @@
                                 </div>
                                 <div class="px-05">
                                     <h4>Chandler</h4>
-                                    <p class="py-05">
+                                    <p class="py-05 review-content">
                                         I've tried numerous gyms in the past, but none compare to Mohammed Abdullah's
                                         Gym.
                                     </p>
@@ -220,7 +232,7 @@
                                 </div>
                                 <div class="px-05">
                                     <h4>Chandler</h4>
-                                    <p class="py-05">
+                                    <p class="py-05 review-content">
                                         I've tried numerous gyms in the past, but none compare to Mohammed Abdullah's
                                         Gym.
                                     </p>
@@ -239,7 +251,7 @@
                                 </div>
                                 <div class="px-05">
                                     <h4>Chandler</h4>
-                                    <p class="py-05">
+                                    <p class="py-05 review-content">
                                         I've tried numerous gyms in the past, but none compare to Mohammed Abdullah's
                                         Gym.
                                     </p>
@@ -258,7 +270,7 @@
                                 </div>
                                 <div class="px-05">
                                     <h4>Chandler</h4>
-                                    <p class="py-05">
+                                    <p class="py-05 review-content">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas nostrum
                                         incidunt autem error recusandae, necessitatibus, beatae eum natus dolores.
                                     </p>
@@ -392,6 +404,14 @@
             $("#show-menu-option").removeClass("mobile-hide");
         }
     </script>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+    
+         darkModeToggle.addEventListener('click', () => {
+             document.body.classList.toggle('dark-mode');
+         });
+    
+     </script>
 </body>
 
 </html>
