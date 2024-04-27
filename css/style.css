@@ -353,6 +353,11 @@ footer ul li {
     #progress-section,.testimonial-content {
         display: none;
     }
+    #header-nav{
+        padding: 0rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 
     .rotate-20 {
         font-size: 20px;
