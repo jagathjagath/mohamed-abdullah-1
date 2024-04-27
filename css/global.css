@@ -97,6 +97,9 @@ a {
 .dg-1-2 {
     grid-template-columns: 1fr 2fr;
 }
+.dg-1-4 {
+    grid-template-columns: 1fr 6fr;
+}
 
 .text-white {
     color: #F0EFF4;
