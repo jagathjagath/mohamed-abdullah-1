@@ -470,6 +470,10 @@ footer ul li {
     #about-header {
         font-size: 15px;
     }
+    .about-content{
+        padding: 1rem;
+        padding-top: 4rem;
+    }
 
     #about-highlight {
         font-size: 20px;
@@ -531,16 +535,13 @@ footer ul li {
         margin-top: 3rem;
     }
 
-    footer ul {
+    footer ul,footer div, footer div p {
         font-size: 3.5vw;
     }
-
-    footer div {
-        font-size: 3.5vw;
-    }
-
-    footer div p {
-        font-size: 3.5vw;
+    .footer-mail{
+        display: flex;
+        justify-content: space-between;
+        gap: 0.25rem;
     }
 
     button {
