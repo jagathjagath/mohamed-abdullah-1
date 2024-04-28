@@ -599,12 +599,20 @@
     }
 </script>
 <script>
-    const darkModeToggle = document.getElementById('darkModeToggle');
+    const toggleDarkMode = () => {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+            const isDarkMode = body.classList.contains('dark-mode');
+            sessionStorage.setItem('darkMode', isDarkMode);
+        };
+        const storedDarkMode = sessionStorage.getItem('darkMode');
+        if (storedDarkMode === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        darkModeToggle.addEventListener('click', toggleDarkMode);
+</script>
 
-     darkModeToggle.addEventListener('click', () => {
-         document.body.classList.toggle('dark-mode');
-     });
 
- </script>
 
 </html>
