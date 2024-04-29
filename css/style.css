@@ -535,16 +535,20 @@ footer ul li {
         margin-top: 3rem;
     }
 
-    .dark-mode-toggle, 
-    .toggle, .toggle::after,
-    .dark-mode .toggle, 
-    .dark-mode .toggle::after{
+    .dark-mode .toggle{
        display: flex;
        justify-content: flex-start;
        position: fixed;
        top: 25px;
        left: 20px;
     }
+    .dark-button .toggle{
+        display: flex;
+        justify-content: flex-start;
+        position: fixed;
+        top: 25px;
+        left: 20px;
+     }
 
     .review-img {
         margin-top: 1rem;
