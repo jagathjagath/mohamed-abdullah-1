@@ -562,14 +562,13 @@ footer ul li {
        top: 25px;
        left: 20px;
     }
-     .dark-button .toggle{
+    .dark-button .toggle{
         display: flex;
         justify-content: flex-start;
         position: fixed;
         top: 25px;
         left: 20px;
      }
-     
 
     .review-img {
         margin-top: 1rem;
