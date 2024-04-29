@@ -629,7 +629,6 @@
             let scrollTop = window.scrollY || window.pageYOffset;
             if (elementTop && scrollTop) {
                 scrollTop += 360;
-                // console.log("element top: ", elementTop, "scrolltop: ", scrollTop);
                 if (scrollTop > elementTop) {
                     return true;
                 }
@@ -674,15 +673,22 @@
             $("#header-nav").removeClass("mobile-hide");
             $("#hide-menu-option").removeClass("mobile-hide");
             $("#show-menu-option").addClass("mobile-hide");
+            $("#darkModeToggle").addClass("mobile-hide"); 
         }
         function hideMenu() {
             $("#header-nav").addClass("mobile-hide");
             $("#hide-menu-option").addClass("mobile-hide");
             $("#show-menu-option").removeClass("mobile-hide");
+            $("#darkModeToggle").removeClass("mobile-hide"); 
         }
     </script>
     <script>
-       const toggleDarkMode = () => {
+        $(".program-images").click(function(){
+            $(this).children('img').toggleClass('flipped');
+        });
+    </script>
+    <script>
+        const toggleDarkMode = () => {
             const body = document.body;
             body.classList.toggle('dark-mode');
             const isDarkMode = body.classList.contains('dark-mode');
@@ -695,8 +701,7 @@
         const darkModeToggle = document.getElementById('darkModeToggle');
         darkModeToggle.addEventListener('click', toggleDarkMode);
     </script>
-    
-    
+       
 </body>
 
 </html>
