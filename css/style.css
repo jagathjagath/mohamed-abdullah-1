@@ -355,8 +355,18 @@ footer ul li {
     }
     #header-nav{
         padding: 0rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: 0rem;
+        padding-bottom: 4rem;
+    }
+    .dark-mode-toggle {
+        position: fixed;
+        top: 10px;
+        width: 0%;
+        height: 0%;
+        left: 25px;
+        border: none;
+        background: transparent;
+        font-size: 16px;
     }
     nav{
         height: 0px;
@@ -535,6 +545,16 @@ footer ul li {
         margin-top: 3rem;
     }
 
+    .dark-mode-toggle {
+        position: fixed;
+        top: 0px;
+        min-width: none;
+        height: none;
+        left: 25px;
+        border: none;
+        font-size: 16px;
+    }
+
     .dark-mode .toggle{
        display: flex;
        justify-content: flex-start;
@@ -542,13 +562,14 @@ footer ul li {
        top: 25px;
        left: 20px;
     }
-    .dark-button .toggle{
+     .dark-button .toggle{
         display: flex;
         justify-content: flex-start;
         position: fixed;
         top: 25px;
         left: 20px;
      }
+     
 
     .review-img {
         margin-top: 1rem;
