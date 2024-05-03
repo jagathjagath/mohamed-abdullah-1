@@ -157,17 +157,9 @@
                     </span>
                 </div>
             </div>
-            <div class="d-grid dg-1-6">
+            <div>
                 <div>
-                    <div class="pt-2 pl-1">
-                        <button class="dark-button dark-mode-toggle" id="darkModeToggle">
-                            <span class="toggle"></span>
-                            <span class="text"></span>
-                        </button>
-                    </div>
-                </div>
-                <div class="menu-black">
-                    <ul class="d-flex df-around pb-2 mobile-hide" id="header-nav">
+                    <ul class="d-flex df-around pb-2 p-2 mobile-hide" id="header-nav">
                         <li>
                             <a href="index.html">Home</a>
                         </li>
@@ -179,6 +171,13 @@
                         </li>
                         <li>
                             <a href="about.html">About Mohammed Abdullah</a>
+                        </li>
+                        <li class="dropdown">
+                            <button onclick="toggleDropdown()" class="dropbtn">Switch Theme</button>
+                            <div id="themeDropdown" class="dropdown-content">
+                                <a href="#" onclick="setLightTheme()">Light Mode</a>
+                                <a href="#" onclick="setDarkTheme()">Dark Mode</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -672,14 +671,12 @@
         function showMenu() {
             $("#header-nav").removeClass("mobile-hide");
             $("#hide-menu-option").removeClass("mobile-hide");
-            $("#show-menu-option").addClass("mobile-hide");
-            $("#darkModeToggle").addClass("mobile-hide"); 
+            $("#show-menu-option").addClass("mobile-hide"); 
         }
         function hideMenu() {
             $("#header-nav").addClass("mobile-hide");
             $("#hide-menu-option").addClass("mobile-hide");
-            $("#show-menu-option").removeClass("mobile-hide");
-            $("#darkModeToggle").removeClass("mobile-hide"); 
+            $("#show-menu-option").removeClass("mobile-hide"); 
         }
     </script>
     <script>
@@ -688,18 +685,37 @@
         });
     </script>
     <script>
-        const toggleDarkMode = () => {
-            const body = document.body;
-            body.classList.toggle('dark-mode');
-            const isDarkMode = body.classList.contains('dark-mode');
-            sessionStorage.setItem('darkMode', isDarkMode);
-        };
-        const storedDarkMode = sessionStorage.getItem('darkMode');
-        if (storedDarkMode === 'true') {
-            document.body.classList.add('dark-mode');
+        function toggleDropdown() {
+            document.getElementById("themeDropdown").classList.toggle("show");
         }
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        darkModeToggle.addEventListener('click', toggleDarkMode);
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        
+        function setLightTheme() {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }
+        
+        function setDarkTheme() {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+        
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+        }  
     </script>
        
 </body>

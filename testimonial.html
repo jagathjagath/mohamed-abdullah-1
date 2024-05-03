@@ -33,17 +33,9 @@
                     </span>
                 </div>
             </div>
-            <div class="d-grid dg-1-6">
+            <div>
                 <div>
-                    <div class="pt-2 pl-1">
-                        <button class="dark-button dark-mode-toggle" id="darkModeToggle">
-                            <span class="toggle"></span>
-                            <span class="text"></span>
-                        </button>
-                    </div>
-                </div>
-                <div class="menu-black">
-                    <ul class="d-flex df-around pb-2 mobile-hide" id="header-nav">
+                    <ul class="d-flex df-around pb-2 p-2 mobile-hide" id="header-nav">
                         <li>
                             <a href="index.html">Home</a>
                         </li>
@@ -55,6 +47,13 @@
                         </li>
                         <li>
                             <a href="about.html">About Mohammed Abdullah</a>
+                        </li>
+                        <li class="dropdown">
+                            <button onclick="toggleDropdown()" class="dropbtn">Switch Theme</button>
+                            <div id="themeDropdown" class="dropdown-content">
+                                <a href="#" onclick="setLightTheme()">Light Mode</a>
+                                <a href="#" onclick="setDarkTheme()">Dark Mode</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -83,19 +82,19 @@
                         <div class="text-center" data-aos="fade-down" data-aos-duration="1500">
                             <h2>
                                 <span class="highlight-text"><strong>4.5/5</strong></span>
-                                <div><strong>Reviews</strong></div>
+                                <div class="highlight-tm"><strong>Reviews</strong></div>
                             </h2>
                         </div>
                         <div class="text-center tm-content" data-aos="fade-down" data-aos-duration="2000">
                             <h2 class="px-1">
                                 <span class="highlight-text"><strong>500+</strong></span>
-                                <div><strong>Happy clients</strong></div>
+                                <div class="highlight-tm"><strong>Happy clients</strong></div>
                             </h2>
                         </div>
                         <div class="text-center tm-content" data-aos="fade-down" data-aos-duration="3000">
                             <h2>
                                 <span class="highlight-text"><strong>42</strong></span>
-                                <div><strong>Competition<br>Won</strong></div>
+                                <div class="highlight-tm"><strong>Competition<br>Won</strong></div>
                             </h2>
                         </div>
                     </div>
@@ -112,7 +111,7 @@
                                     <i class="ri-star-fill rating"></i>
                                     <i class="ri-star-fill rating"></i>
                                 </div>
-                                <div class="px-05">
+                                <div class="px-05 reviewer">
                                     <h4>Chandler</h4>
                                     <p class="py-05 review-content">
                                         I've tried numerous gyms in the past, but none compare to Mohammed Abdullah's
@@ -131,7 +130,7 @@
                                     <i class="ri-star-fill rating"></i>
                                     <i class="ri-star-fill rating"></i>
                                 </div>
-                                <div class="px-05">
+                                <div class="px-05 reviewer">
                                     <h4>Chandler</h4>
                                     <p class="py-05 review-content">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas nostrum
@@ -150,7 +149,7 @@
                                     <i class="ri-star-fill rating"></i>
                                     <i class="ri-star-fill rating"></i>
                                 </div>
-                                <div class="px-05">
+                                <div class="px-05 reviewer">
                                     <h4>Chandler</h4>
                                     <p class="py-05 review-content">
                                         I've tried numerous gyms in the past, but none compare to Mohammed Abdullah's
@@ -171,7 +170,7 @@
                                     <i class="ri-star-fill rating"></i>
                                     <i class="ri-star-fill rating"></i>
                                 </div>
-                                <div class="px-05">
+                                <div class="px-05 reviewer">
                                     <h4>Chandler</h4>
                                     <p class="py-05 review-content">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas nostrum
@@ -190,7 +189,7 @@
                                     <i class="ri-star-fill rating"></i>
                                     <i class="ri-star-fill rating"></i>
                                 </div>
-                                <div class="px-05">
+                                <div class="px-05 reviewer">
                                     <h4>Chandler</h4>
                                     <p class="py-05 review-content">
                                         I've tried numerous gyms in the past, but none compare to Mohammed Abdullah's
@@ -209,7 +208,7 @@
                                     <i class="ri-star-fill rating"></i>
                                     <i class="ri-star-fill rating"></i>
                                 </div>
-                                <div class="px-05">
+                                <div class="px-05 reviewer">
                                     <h4>Chandler</h4>
                                     <p class="py-05 review-content">
                                         I've tried numerous gyms in the past, but none compare to Mohammed Abdullah's
@@ -230,7 +229,7 @@
                                     <i class="ri-star-fill rating"></i>
                                     <i class="ri-star-fill rating"></i>
                                 </div>
-                                <div class="px-05">
+                                <div class="px-05 reviewer">
                                     <h4>Chandler</h4>
                                     <p class="py-05 review-content">
                                         I've tried numerous gyms in the past, but none compare to Mohammed Abdullah's
@@ -249,7 +248,7 @@
                                     <i class="ri-star-fill rating"></i>
                                     <i class="ri-star-fill rating"></i>
                                 </div>
-                                <div class="px-05">
+                                <div class="px-05 reviewer">
                                     <h4>Chandler</h4>
                                     <p class="py-05 review-content">
                                         I've tried numerous gyms in the past, but none compare to Mohammed Abdullah's
@@ -268,7 +267,7 @@
                                     <i class="ri-star-fill rating"></i>
                                     <i class="ri-star-fill rating"></i>
                                 </div>
-                                <div class="px-05">
+                                <div class="px-05 reviewer">
                                     <h4>Chandler</h4>
                                     <p class="py-05 review-content">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas nostrum
@@ -397,28 +396,45 @@
             $("#header-nav").removeClass("mobile-hide");
             $("#hide-menu-option").removeClass("mobile-hide");
             $("#show-menu-option").addClass("mobile-hide");
-            $("#darkModeToggle").addClass("mobile-hide"); 
         }
         function hideMenu() {
             $("#header-nav").addClass("mobile-hide");
             $("#hide-menu-option").addClass("mobile-hide");
             $("#show-menu-option").removeClass("mobile-hide");
-            $("#darkModeToggle").removeClass("mobile-hide"); 
         }
     </script>
-   <script>
-        const toggleDarkMode = () => {
-            const body = document.body;
-            body.classList.toggle('dark-mode');
-            const isDarkMode = body.classList.contains('dark-mode');
-            sessionStorage.setItem('darkMode', isDarkMode);
-        };
-        const storedDarkMode = sessionStorage.getItem('darkMode');
-        if (storedDarkMode === 'true') {
-            document.body.classList.add('dark-mode');
+    <script>
+        function toggleDropdown() {
+            document.getElementById("themeDropdown").classList.toggle("show");
         }
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        darkModeToggle.addEventListener('click', toggleDarkMode);
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        
+        function setLightTheme() {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }
+        
+        function setDarkTheme() {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+        
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+        }  
     </script>    
 </body>
 
