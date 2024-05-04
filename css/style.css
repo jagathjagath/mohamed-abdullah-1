@@ -359,22 +359,25 @@ footer ul li {
         display: none;
     }
     #header-nav{
+        margin: 0rem;
         padding: 0rem;
-        padding-top: 0rem;
-        padding-bottom: 4rem;
+        padding-top: 1rem;
     }
-    .dark-mode-toggle {
-        position: fixed;
-        top: 10px;
-        width: 0%;
-        height: 0%;
-        left: 25px;
-        border: none;
-        background: transparent;
-        font-size: 16px;
+    #header-nav a {
+        padding: 0 10px; 
+        font-size: 15px;
     }
+    .dropdown-content a {
+        display: block;
+        padding: 10px;
+        margin-right: 100px;
+        height: 50px;
+        align-items: center;
+    }  
+
     nav{
         height: 0px;
+        padding-top: 0.5rem;
         padding-bottom: 1rem;
     }
 
@@ -494,7 +497,11 @@ footer ul li {
     .footer-heading{
         margin-left: 0rem;
     }
-
+    .mobile-menu li a, .mobile-menu li button{
+        display: flex;
+        justify-content: space-between;
+        white-space: nowrap;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -555,31 +562,6 @@ footer ul li {
     #highlight-section {
         margin-top: 3rem;
     }
-
-    .dark-mode-toggle {
-        position: fixed;
-        top: 0px;
-        min-width: none;
-        height: none;
-        left: 25px;
-        border: none;
-        font-size: 16px;
-    }
-
-    .dark-mode .toggle{
-       display: flex;
-       justify-content: flex-start;
-       position: fixed;
-       top: 25px;
-       left: 20px;
-    }
-    .dark-button .toggle{
-        display: flex;
-        justify-content: flex-start;
-        position: fixed;
-        top: 25px;
-        left: 20px;
-     }
 
     .review-img {
         margin-top: 1rem;
@@ -672,6 +654,16 @@ footer ul li {
         text-align: center;
         padding-top: 1rem;
     }
+    .mobile-menu a{
+        max-width: 50%;
+    }
+    .mobile-menu{
+        max-width: 100%;
+        background-color: #FFFFFF;
+    }
+    [data-theme='dark'] .mobile-menu{
+        background-color: #454545;
+    }
 
     .mobile-hide {
         display: none !important;
@@ -679,6 +671,28 @@ footer ul li {
 
     .mobile-show {
         display: initial !important;
+    }
+    .dropbtn{
+       padding-top: 0.5rem;
+       padding-left: 0.75rem;
+       padding-bottom: 1rem;
+       text-align: left;
+       max-width: 30%;
+    }
+    .dropdown-content a {
+        display: block;
+        margin-right: 0px;
+        height: 50px;
+    }
+
+    .dropdown{
+        margin-left: 0rem;
+        padding-left: 0.5rem;
+        align-items: center;
+        background-color: lightgray;
+    }
+    [data-theme='dark'] .dropdown{
+        background-color: grey;
     }
 
     .tm-highlight {
