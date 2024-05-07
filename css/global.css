@@ -53,6 +53,9 @@ a {
 .gap-2 {
     gap: 2rem;
 }
+.gap-6 {
+    gap: 6rem;
+}
 
 .df-around {
     justify-content: space-around;

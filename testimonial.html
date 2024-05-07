@@ -34,8 +34,8 @@
                 </div>
             </div>
             <div>
-                <div class="mobile-menu">
-                    <ul class="d-flex df-around pb-2 p-2 mobile-hide" id="header-nav">
+                <div class="mobile-menu d-flex df-around gap-0 align-center">
+                    <ul class="d-flex df-between gap-6 pb-2 p-2 mobile-hide" id="header-nav">
                         <li>
                             <a href="index.html">Home</a>
                         </li>
@@ -48,11 +48,13 @@
                         <li>
                             <a href="about.html">About Mohammed Abdullah</a>
                         </li>
+                    </ul>
+                    <ul>
                         <li class="dropdown">
-                            <button onclick="toggleDropdown()" class="dropbtn">Switch Theme</button>
+                            <button onclick="toggleDropdown()" class="dropbtn"><i class="ri-settings-4-fill"></i></button>
                             <div id="themeDropdown" class="dropdown-content">
-                                <a href="#" onclick="setLightTheme()">Light Mode</a>
-                                <a href="#" onclick="setDarkTheme()">Dark Mode</a>
+                                <a href="#" onclick="setLightTheme()"><i class="ri-sun-line"> Light</i></a>
+                                <a href="#" onclick="setDarkTheme()"><i class="ri-moon-line"> Dark</i></a>
                             </div>
                         </li>
                     </ul>
