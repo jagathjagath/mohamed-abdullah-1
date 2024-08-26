@@ -20,14 +20,15 @@ nav {
     -moz-box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .16);
     z-index: 1;
 }
+
 body::-webkit-scrollbar {
-    width: 0;  
-    height: 0; 
+    width: 0;
+    height: 0;
 }
 
 body::-webkit-scrollbar,
 body::-moz-scrollbar {
-    display: none; 
+    display: none;
 }
 
 nav ul li a {
@@ -56,7 +57,7 @@ footer ul li a:hover {
 }
 
 a:hover {
-    color: blue;
+    color: white;
 }
 
 #hero-section {
@@ -191,7 +192,8 @@ footer ul li {
     padding: 15px 50px;
     transition: 50ms;
 }
-.program-title a{
+
+.program-title a {
     color: #1B1F1F;
 }
 
@@ -280,12 +282,6 @@ footer ul li {
     transition: transform 0.20s ease, opacity 0.20s ease;
 }
 
-
-.flipped {
-    transform: scaleX(-1);
-    opacity: 0;
-}
-
 .milestone-position {
     float: right;
     position: relative;
@@ -351,31 +347,51 @@ footer ul li {
     border-radius: 20px;
 }
 
+.flipped {
+    transform: rotateY(180deg);
+    transition: transform 0.6s;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.full-width {
+    width: 100%;
+}
 
 @media only screen and (max-width: 900px) {
 
 
-    #progress-section,.testimonial-content {
+    #progress-section,
+    .testimonial-content {
         display: none;
     }
-    #header-nav{
+
+    #header-nav {
         margin: 0rem;
         padding: 0rem;
         padding-top: 1rem;
     }
+
     #header-nav a {
-        padding: 0 10px; 
+        padding: 0 10px;
         font-size: 15px;
     }
+
     .dropdown-content a {
         display: block;
         padding: 10px;
         margin-right: 100px;
         height: 50px;
         align-items: center;
-    }  
+    }
 
-    nav{
+    nav {
         height: 0px;
         padding-top: 0.5rem;
         padding-bottom: 1rem;
@@ -412,7 +428,8 @@ footer ul li {
         margin-top: 0rem !important;
         padding-top: 0rem !important;
     }
-    .tm-content{
+
+    .tm-content {
         padding-top: 1rem;
     }
 
@@ -431,10 +448,11 @@ footer ul li {
     #gallery-section {
         display: none;
     }
-    .highlight-content{
+
+    .highlight-content {
         max-width: 100%;
     }
-    
+
     #highlight-video {
         margin-top: 13rem;
         max-width: 350px;
@@ -442,7 +460,8 @@ footer ul li {
         margin-left: 0rem;
         padding-left: 0rem;
     }
-    .testimonial-rotate{
+
+    .testimonial-rotate {
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -463,11 +482,13 @@ footer ul li {
     .plan-grid {
         grid-template-columns: 1fr;
     }
-    .tm-image{
+
+    .tm-image {
         margin-left: 0rem;
         margin-top: 2rem;
     }
-    .program-img{
+
+    .program-img {
         max-width: 90%;
     }
 
@@ -478,26 +499,34 @@ footer ul li {
     .mobile-show {
         display: initial !important;
     }
-    .program-left{
+
+    .program-left {
         margin-left: 1rem;
     }
-    .program-right{
+
+    .program-right {
         margin-left: 0rem;
         margin-right: 2rem;
     }
-    nav{
+
+    nav {
         min-height: 3rem;
     }
-    .about-head{
+
+    .about-head {
         margin-top: 6rem;
     }
-    .testimonial-highlight{
+
+    .testimonial-highlight {
         margin-top: 0rem;
     }
-    .footer-heading{
+
+    .footer-heading {
         margin-left: 0rem;
     }
-    .mobile-menu li a, .mobile-menu li button{
+
+    .mobile-menu li a,
+    .mobile-menu li button {
         display: flex;
         justify-content: space-between;
         white-space: nowrap;
@@ -505,10 +534,13 @@ footer ul li {
 }
 
 @media only screen and (max-width: 600px) {
-    #gallery-section, #highlight-video {
+
+    #gallery-section,
+    #highlight-video {
         display: none;
     }
-    #about-highlight-video{
+
+    #about-highlight-video {
         padding: 0rem;
         max-width: 100%;
         height: 50%;
@@ -525,19 +557,24 @@ footer ul li {
     #about-header {
         font-size: 15px;
     }
-    .about-content{
+
+    .about-content {
         padding: 1rem;
         padding-top: 4rem;
     }
-    .program-img{
+
+    .program-img {
         max-width: 50%;
     }
-    .dark-mode .menu-black{
+
+    .dark-mode .menu-black {
         background-color: #454545;
     }
-    .menu-black{
+
+    .menu-black {
         background-color: white;
     }
+
 
     #about-highlight {
         font-size: 20px;
@@ -599,15 +636,19 @@ footer ul li {
         margin-top: 3rem;
     }
 
-    footer ul,footer div, footer div p {
+    footer ul,
+    footer div,
+    footer div p {
         font-size: 3.5vw;
     }
-    .footer-mail{
+
+    .footer-mail {
         display: flex;
         justify-content: space-between;
         gap: 0.25rem;
     }
-    .footer-heading{
+
+    .footer-heading {
         margin-left: 0rem;
     }
 
@@ -624,16 +665,18 @@ footer ul li {
         margin: 10px;
         width: 100%;
     }
-    .program-left{
+
+    .program-left {
         padding-top: 1rem;
         margin-right: 0.5rem;
-        justify-self:center;
+        justify-self: center;
         box-shadow: 0px 0px 0px 0 rgb(255, 255, 255);
     }
-    .program-right{
+
+    .program-right {
         margin-bottom: 1.5rem;
         margin-left: 2.5rem;
-        justify-self:center;
+        justify-self: center;
         box-shadow: 0px 0px 0px 0 rgb(255, 255, 255);
     }
 
@@ -654,14 +697,17 @@ footer ul li {
         text-align: center;
         padding-top: 1rem;
     }
-    .mobile-menu a{
+
+    .mobile-menu a {
         max-width: 50%;
     }
-    .mobile-menu{
+
+    .mobile-menu {
         max-width: 100%;
         background-color: #FFFFFF;
     }
-    [data-theme='dark'] .mobile-menu{
+
+    [data-theme='dark'] .mobile-menu {
         background-color: #454545;
     }
 
@@ -672,26 +718,29 @@ footer ul li {
     .mobile-show {
         display: initial !important;
     }
-    .dropbtn{
-       padding-top: 0.5rem;
-       padding-left: 0.75rem;
-       padding-bottom: 1rem;
-       text-align: left;
-       max-width: 30%;
+
+    .dropbtn {
+        padding-top: 0.5rem;
+        padding-left: 0.75rem;
+        padding-bottom: 1rem;
+        text-align: left;
+        max-width: 30%;
     }
+
     .dropdown-content a {
         display: block;
         margin-right: 0px;
         height: 50px;
     }
 
-    .dropdown{
+    .dropdown {
         margin-left: 0rem;
         padding-left: 0.5rem;
         align-items: center;
         background-color: lightgray;
     }
-    [data-theme='dark'] .dropdown{
+
+    [data-theme='dark'] .dropdown {
         background-color: grey;
     }
 
