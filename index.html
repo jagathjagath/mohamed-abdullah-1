@@ -102,7 +102,7 @@
                                 <h3>👋 Hey There,<br>
                                     I'm here to help you start your fitness journey! 💪</h3>
                                 <div class="mt-1">
-                                    <button class="btn btn-action" onclick="window.open('https://wa.me/8825726689')">
+                                    <button class="btn btn-action" onclick="window.open('https://wa.me/7051765575')">
                                         <i class="ri-whatsapp-fill"></i>
                                         Contact Mohammed Abdullah
                                     </button>
@@ -135,6 +135,7 @@
                 </div>
             </div>
         </section>
+
         <section id="program-section">
             <div class="container">
                 <div class="d-grid df-center f-24" id="home-headings">
@@ -147,7 +148,7 @@
                                 Core Strengthening
                             </div>
                         </div>
-                        <img src="img/program/program-1.png" class="full-width" alt="">
+                        <img src="img/program/program-1.png" class="full-width" alt="Core Strengthening">
                     </div>
                     <div class="text-center program-images mt-1 content">
                         <div class="relative full-width">
@@ -155,7 +156,7 @@
                                 Cross Fit
                             </div>
                         </div>
-                        <img src="img/program/program-2.png" class="full-width" alt="">
+                        <img src="img/program/program-2.png" class="full-width" alt="Cross Fit">
                     </div>
                     <div class="text-center program-images mt-1 content">
                         <div class="relative full-width">
@@ -163,18 +164,19 @@
                                 Contest Preparation
                             </div>
                         </div>
-                        <img src="img/program/program-1.png" class="full-width" alt="">
+                        <img src="img/program/program-1.png" class="full-width" alt="Contest Preparation">
                     </div>
                 </div>
                 <div class="d-flex df-center mt-2" id="mobile-button">
                     <button class="btn btn-action">
-                        <a href="program.html">
+                        <a href="program.html" style="color: #fff; text-decoration: none;">
                             Explore All Programs
                         </a>
                     </button>
                 </div>
             </div>
         </section>
+
         <section id="progress-section">
             <div class="plan-container plan-card mx-2 mt-3">
                 <div class="d-grid dg-1-2">
@@ -294,7 +296,7 @@
                             </p>
                         </div>
                         <div class="mt-2" data-aos="fade-up" data-aos-duration="3000">
-                            <button class="btn btn-action" onclick="window.open('https://wa.me/8825726689')">
+                            <button class="btn btn-action" onclick="window.open('https://wa.me/7051765575')">
                                 <i class="ri-whatsapp-fill"></i>
                                 Contact Mohammed Abdullah
                             </button>
@@ -396,7 +398,7 @@
                 </div>
                 <div class="d-flex df-center mobile-block mt-2" id="mobile-button">
                     <button class="btn btn-action" data-aos="fade-down" data-aos-duration="1000"
-                        onclick="window.open('https://wa.me/8825726689')">
+                        onclick="window.open('https://wa.me/7051765575')">
                         <i class="ri-whatsapp-fill"></i>
                         Contact Mohammed Abdullah
                     </button>
@@ -611,6 +613,7 @@
         AOS.init();
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         function showMenu() {
             $("#header-nav").removeClass("mobile-hide");
@@ -624,8 +627,10 @@
         }
     </script>
     <script>
-        $(".program-images").click(function () {
-            $(this).children('img').toggleClass('flipped');
+        $(document).ready(function () {
+            $(".program-images").click(function () {
+                $(this).find('img').toggleClass('flipped');
+            });
         });
     </script>
     <script>
