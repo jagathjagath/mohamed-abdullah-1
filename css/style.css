@@ -720,11 +720,9 @@ footer ul li {
     }
 
     .dropbtn {
-        padding-top: 0.5rem;
-        padding-left: 0.75rem;
-        padding-bottom: 1rem;
+        padding: 0.75rem;
         text-align: left;
-        max-width: 30%;
+
     }
 
     .dropdown-content a {
